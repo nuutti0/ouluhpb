@@ -1,0 +1,274 @@
+/* font import :) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-container {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    background-color: black;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    position: fixed;
+}
+
+.navbar {
+    display: flex;
+    width: 80vw;
+    height: 10vh;
+    justify-content: space-between;
+}
+
+
+.main-title {
+    font-family: 'Inter', sans-serif;
+    width: 40vw;
+    align-self: center;
+    font-size: 2.5rem;
+    font-weight: 600vw;
+}
+
+.main-description {
+    width: 40vw;
+    align-self: center;
+    font-family: 'Inter', sans-serif;
+    text-align: end;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.25rem;
+    color: black;
+    background-color: white;
+    padding: 2em 2em 1em 2em;
+    align-items: flex-end;
+}
+
+.navbar .logos {
+    align-self: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#textbox {
+    overflow-y: scroll;
+    height: 50vh;
+    width: auto;
+}
+
+#textbox a {
+    color: black;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+#textbox li {
+    padding-bottom: 2vh;
+}
+
+.language {
+    padding-left: 1vw;
+    font-size: 0.8rem;
+    display: flex;
+}
+
+.language p {
+    padding: 0 0.5vw 0 0.5vw;
+}
+
+#title {
+    font-size: 1rem;
+    align-self: center;
+    color: white;
+    text-decoration: none;
+    padding-left: 3vw;
+}
+
+
+#links {
+    display: flex;
+    width: 30vw;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#links a {
+    color: white;
+    text-decoration: none;
+}
+
+.uni-logo {
+    width: 6em;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7379%) hue-rotate(68deg) brightness(113%) contrast(98%);
+}
+
+main {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+.main-title {
+    font-family: 'Inter', sans-serif;
+    width: 40vw;
+    align-self: center;
+    padding-left: 10vh;
+    justify-self: center;
+    font-size: 2.5rem;
+    font-weight: 600vw;
+}
+
+.vcards {
+    width: 60vw;
+    padding-top: 20vh;
+    font-family: 'Inter', sans-serif;
+    display: grid;
+    font-size: 1.25rem;
+    grid-template-columns: 30vw 30vw;
+}
+
+.arrow {
+    padding-top: 2vh;
+}
+
+footer {
+    width: 100vw;
+    height: 80vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#footer-info {
+    width: 80vw;
+    height: 30vh;
+    display: flex;
+    font-family: 'Inter', sans-serif;
+    color: white;
+}
+
+#contact-us {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+#xtra-info {
+    font-size: 1rem;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#copyright {
+    text-decoration: none;
+    color: white;
+}
+
+#socials {
+    display: flex;
+    height: 50vh;
+    width: 80vw;
+    align-items: center;
+    justify-content: center;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7379%) hue-rotate(68deg) brightness(113%) contrast(98%);
+}
+
+#socials a {
+    text-decoration: none;
+}
+
+#socials a img {
+    width: 2em;
+}
+
+a:hover {
+    animation: shake 00.75s;
+}
+
+ul {
+    list-style: none;
+    text-align: center;
+}
+
+li a {
+    color:white;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 1150px) {
+    #description-container {
+        animation: none;
+        flex-direction: column;
+        align-items: center;
+        height: 96vh;
+
+    }
+
+    #description {
+        height: 45vh;
+        width: 80vw;
+    }
+
+    #description-image {
+        width: 80vw;
+    }
+
+}
+
+@media only screen and (max-width: 820px) {
+    .navbar {
+        height: 20vh;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100vw;
+    }
+
+    .logos {
+        width: 60vw;
+        justify-content: space-between;
+    }
+
+
+    #links {
+        width: 100vw;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .main-title {
+        width: 90vw;
+        padding-bottom: 2vh;
+    }
+
+    .main-description {
+        width: 90vw;
+        text-align: left;
+    }
+}
+
+#title, #copyright {
+    animation: none;
+}
+
+@keyframes shake {
+    0% {transform: translateX(0px);}
+    50% {transform: translateX(5px);}
+    100% {transform: translateX(0px);}
+}
+
+#publications {
+    font-style: italic;
+}
