@@ -415,21 +415,6 @@ li a {
     #description-image {
         visibility: hidden;
     }
-    #description {
-        color: black;
-        background-color: white;
-    }
-
-    #description h2 {
-        font-size: 2rem;
-        color: black;
-        width: 100%;
-    }
-    
-    #description p {
-        font-size: 1.25rem;
-        color: black;
-    }
 }
    
 
