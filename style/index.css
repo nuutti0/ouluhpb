@@ -21,13 +21,11 @@ html {
     color: white;
     position: fixed;
     z-index: 1;
-    border: 2px solid red;
 }
 
 .navbar {
     display: flex;
     width: 80vw;
-    border: 2px solid blue;
     height: 10vh;
     justify-content: space-between;
 }
@@ -35,7 +33,6 @@ html {
 .navbar .logos {
     align-self: center;
     display: flex;
-    border: 2px solid purple;
     justify-content: space-between;
     align-items: center;
 }
@@ -54,7 +51,6 @@ html {
     width: 30vw;
     align-items: center;
     justify-content: space-around;
-    border: 2px solid green;
 }
 
 #links a {
@@ -135,7 +131,6 @@ main {
     display: flex;
     flex-direction: column;
     width: 85%;
-    border: 3px solid purple;
 }
 
 
@@ -146,7 +141,6 @@ main {
     justify-content: space-around;
     margin-top: 30vh;
     width: 100vw;
-    border: 3px solid red;
 }
 
 #publications-about {
@@ -154,7 +148,6 @@ main {
     flex-direction: column;
     width: 100%;
     justify-content: center;
-    border: 3px solid green;
     align-self: center;
 }
 
@@ -166,7 +159,6 @@ main {
 #publications-about p {
     font-size: 1.25rem;
     padding: 1vh 0 0 4vw;
-    border: 3px solid blue;
 }
 
 #publications-links {
@@ -185,7 +177,6 @@ main {
         "buffer2"
         "link2"
         "buffer3";
-    border: 3px solid yellow;
 }
 
 #link1 {
@@ -193,7 +184,6 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 3px solid magenta;
 }
 
 #link2 {
@@ -201,7 +191,6 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 3px solid brown;
 }
 
 .arrow-link {
