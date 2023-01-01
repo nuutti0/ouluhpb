@@ -62,7 +62,6 @@ html {
     filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7379%) hue-rotate(68deg) brightness(113%) contrast(98%);
 }
 
-
 main {
     display: flex;
     height: 100vh;
