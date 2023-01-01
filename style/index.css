@@ -401,21 +401,8 @@ li a {
     }
 }
     @media screen and (max-height: 650px) {
-        .uni-logo {
-            visibility: hidden;
-        }
-    .navbar .logos {
-        height: 20%;
-        width: 90%;
-        flex-direction: row-reverse;
+
     }
-    main {
-        padding-top: 40vh;
-    }
-    #description-image {
-        visibility: hidden;
-    }
-}
    
 
 #title, #copyright {
