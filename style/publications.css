@@ -12,6 +12,23 @@ html {
     overflow-x: hidden;
 }
 
+.hamburger {
+    cursor: pointer;
+    border: 0;
+    background-color: transparent;
+    color: white;
+    font-size: 24px;
+    display: none;
+}
+
+.hamburger:focus {
+    outline: none;
+}
+
+#contact-hamburger {
+    display: none;
+}
+
 header {
     display: flex;
     position: fixed;
@@ -180,6 +197,7 @@ li a {
     justify-content: center;
     align-items: center;
     margin-right: auto;
+    flex-direction: row;
 }
 
 .navlinks {
@@ -282,18 +300,19 @@ ul {
 
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
     header {
         position: fixed;
         width: 100%;
         height: 15vh;
         z-index: 99;
-        bottom: 0;
+        top: 0;
     }
+
+    #contact-hamburger {
+        display: inline;
+    }   
     
-    main {
-        padding-top: 0;
-    }
     #publications-links {
         width: 80%;
         align-self: center;
@@ -312,11 +331,45 @@ ul {
         width: 100%;
         justify-content: center;
     }
-    #title {
-        display: none;
+
+    .hamburger {
+        display: block;
+    }
+
+    .navlinks {
+        flex-direction: column;
+    }
+    .navlinks, .cta {display: none;}
+    .navlinks.show {
+        display: flex;
+        position: fixed;
+        font-size: 1.2rem;
+        top: 15vh;
+        left: 0;
+        text-align: center;
+        justify-content: center;
+        background-color: black;
+        color: white;
+        width: 100%;
+        height: 50vh;
+        border-radius: 0 0 20px 20px;
+    }
+
+    .navlinks.show li {
+        margin-bottom:2.5em;
+
+    }
+    .navlinks.show li a {
+        color: black;
+        background-color: white;
+        padding: 0.75em 1em 0.75em 1em;
+        border-radius: 10px;
+    }
+    .navlinks.show #publications {
+        text-decoration: none;
+        font-style: italic;
     }
 }
-
 
 #title, #copyright {
     animation: none;
@@ -338,11 +391,4 @@ ul {
     }
 }
 
-#title, #copyright {
-    animation: none;
-}
-
-#publications {
-    text-decoration: underline;
-}
 
