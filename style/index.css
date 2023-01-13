@@ -12,62 +12,67 @@ html {
 }
 
 
-.navbar-container {
+header {
     display: flex;
-    width: 100vw;
-    justify-content: center;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10% 30px 10%;
     background-color: black;
+    color: white;
     font-family: 'Inter', sans-serif;
-    color: white;
-    position: fixed;
-    z-index: 1;
+    height: 40px;
 }
 
-.navbar {
-    display: flex;
-    width: 80vw;
-    height: 10vh;
-    justify-content: space-between;
-}
-
-.navbar .logos {
-    align-self: center;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#title {
-    font-size: 1rem;
-    align-self: center;
-    color: white;
-    text-decoration: none;
-    padding-left: 3vw;
-}
-
-
-#links {
-    display: flex;
-    width: 30vw;
-    align-items: center;
-    justify-content: space-around;
-}
-
-#links a {
-    color: white;
-    text-decoration: none;
-}
-
-.uni-logo {
-    width: 6em;
+.logo {
+    width: 5em;
+    cursor: pointer;
     filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7379%) hue-rotate(68deg) brightness(113%) contrast(98%);
+}
+
+.logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+}
+
+.navlinks {
+    list-style: none;
+    text-align: right;
+}
+
+.navlinks li {
+    display: inline-block;
+    padding: 0px 1em;
+}
+
+.navlinks li a {
+    transition: all 0.3s ease 0s;
+}
+
+.navlinks li a:hover {
+    color: lightgrey;
+}
+
+#contact {
+    padding: 1em 1.5em;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+#contact:hover {
+    background-color: rgba(197, 197, 197, 0.85);
 }
 
 main {
     display: flex;
-    height: 100vh;
+    height: auto;
     width: 100vw;
     justify-content: center;
+    min-height: 85vh;
+    padding-bottom: 15vh;
 }
 
 .main-title {
@@ -92,6 +97,7 @@ main {
     align-items: flex-end;
 }
 
+
 .arrow {
     padding-top: 2vh;
     filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7379%) hue-rotate(68deg) brightness(113%) contrast(98%);
@@ -99,14 +105,16 @@ main {
 
 #description-container {
     width: 100vw;
-    height: 40vh;
+    height: auto;
     display: flex;
+    position: relative;
     justify-content: center;
+    padding: 15vh 0 15vh 0;
 }
 
 #description {
     background-color: black;
-    width: 50vw;
+    width: 40vw;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -114,7 +122,6 @@ main {
     align-items: center;
     justify-content: center;
 }
-
 
 #description h2 {
     font-size: 2rem;
@@ -127,49 +134,50 @@ main {
     color: white;
 }
 
+#description-image {
+    max-width: 50vw;
+}
+
 #description-center-box {
     display: flex;
     flex-direction: column;
     width: 85%;
 }
 
-
 #publications-info {
-    height: 80vh;
+    height: auto;
     display: flex;
     font-family: 'Inter', sans-serif;
     justify-content: space-around;
-    margin-top: 30vh;
     width: 100vw;
+    padding: 15vh 0 30vh 0;
 }
 
 #publications-about {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 60%;
     justify-content: center;
     align-self: center;
 }
 
 #publications-about h2 {
     font-size: 2rem;
-    padding: 0vh 0 0 4vw;
 }
 
 #publications-about p {
     font-size: 1.25rem;
-    padding: 1vh 0 0 4vw;
+    padding-top: 1vh;
 }
 
 #publications-links {
     display: grid;
-    grid-template-rows: 100px 100px 100px 100px;
-    width: 50vw;
+    width: auto;
     align-items: center;
+    height: auto;
     justify-content: center;
     font-weight: 600;
     font-size: 1.3rem;
-    grid-template-columns: 0.5fr;
     grid-template-rows: 1fr 1fr 0.1fr 1fr 1fr;
     grid-template-areas:
         "buffer1"
@@ -193,17 +201,11 @@ main {
     align-items: center;
 }
 
-.arrow-link {
-    width: 2vw;
-    padding-left: 1vw;
-    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7379%) hue-rotate(68deg) brightness(113%) contrast(98%);
-}
-
-
 #publications-container {
     background-color: black;
     color: white;
-    height: 60vh;
+    height: auto;
+    min-height: 50vh;
     width: 90vw;
     display: flex;
     font-family: 'Inter', sans-serif;
@@ -233,6 +235,7 @@ footer {
     width: 50%;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 #xtra-info {
@@ -265,13 +268,8 @@ footer {
     width: 2em;
 }
 
-a:hover {
-    animation: shake 00.75s;
-}
-
-ul {
+footer ul {
     list-style: none;
-    text-align: center;
 }
 
 li a {
@@ -295,34 +293,18 @@ li a {
         animation: none;
         flex-direction: column;
         align-items: center;
-        height: 96vh;
+        min-height: 96vh;
 
     }
 
     #description {
-        height: 45vh;
-        width: 80vw;
+        width: 90%;
+        padding: 1em 0 1em 0;
     }
 
     #description-image {
-        width: 80vw;
-    }
-
-    .navbar {
-        height: 20vh;
-        justify-content: center;
-        flex-wrap: wrap;
-        width: 100vw;
-    }
-
-    .logos {
-        width: 60vw;
-        justify-content: space-between;
-    }
-
-
-    #links {
-        width: 100vw;
+        width: 90%;
+        max-width: none;
     }
 
     main {
@@ -340,17 +322,17 @@ li a {
     }
 
     #publications-info {
-        height: 150vh;
-    }
-
-    #publications-about {
-        width: 100%;
-        height: 50%;
+        height: auto;
     }
 
     #publications-container {
-        height: 100vh;
         flex-direction: column;
+        max-height: none;
+        padding: 1em 0 1em 0;
+    }
+
+    #publications-about {
+        width: 90%;
     }
 
     #publications-links {
@@ -381,7 +363,6 @@ li a {
 
 @media screen and (max-width: 600px) {
     #publications-links {
-        height: 30vh;
         width: 80%;
         align-self: center;
         grid-template-columns: 1fr;
@@ -399,10 +380,11 @@ li a {
         width: 100%;
         justify-content: center;
     }
-}
-    @media screen and (max-height: 650px) {
-
+    #title {
+        display: none;
     }
+}
+
    
 
 #title, #copyright {
@@ -416,5 +398,5 @@ li a {
 }
 
 #home {
-    font-style: italic;
+    text-decoration: underline;
 }
