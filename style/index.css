@@ -51,16 +51,15 @@ header {
     justify-content: center;
     align-items: center;
     margin-right: auto;
+    flex-direction: row;
 }
 
 .navlinks {
     list-style: none;
     text-align: right;
-    flex-wrap: wrap;
 }
 
 .navlinks li {
-    display: inline-block;
     padding: 0px 1em;
 }
 
@@ -445,7 +444,8 @@ li a {
         background-color: black;
         color: white;
         width: 100%;
-        height: 85vh;
+        height: 50vh;
+        border-radius: 0 0 20px 20px;
     }
 
     .navlinks.show li {
