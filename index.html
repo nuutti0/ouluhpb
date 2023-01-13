@@ -13,25 +13,31 @@
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
         <link rel="manifest" href="/site.webmanifest">
         <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-        <script src="script.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-            <header class="navbar">
+            <header class="navbar" id="navbar">
                 <div class="logos">
                     <a href="#"><img src="assets/ouluhpb.svg" class="logo"></a>
                     <p id="title" href="#">Oulu University Hospital HPB Research Group</p>
                 </div>
                 <nav id="links">
-                    <ul class="navlinks">
-                    <li><a id="home" href="#">Home</a></li>
-                    <li><a id="publications" href="publications.html">Publications</a></li>
+                    <ul class="navlinks" id="navUL">
+                    <li class="navitem"><a id="home" href="#">Home</a></li>
+                    <!--<li><a id="work" href="work.html">Our work</a></li>-->
+                    <li class="navitem"><a id="publications" href="publications.html">Publications</a></li>
+                    <li class="navitem"><a id="contact-hamburger" href="contact.html">Contact us</a></li>
                 </ul>
                 </nav>
-                <a class="cta" href="contact.html"><button id="contact">Contact</button></a>
+                <a class="cta navitem" href="contact.html"><button id="contact">Contact</button></a>
                 <!-- <ul class="navlinks" id="lan">
                     <li><a id="fi" href="fi/index.html">fi</a></li>
                     <li><p>/</p></li>
                     <li><a id="en" href="#" style="font-style: italic;">en</a></li></ul> -->
+                    <button class="hamburger" id="hamburger">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    </div>
             </header>
         <main>
             <h1 class="main-title">Oulu University Hospital <br>HPB Research Group</h1>
@@ -93,5 +99,6 @@
                     <a id="twitter" href="https://twitter.com"><img src="assets/Twitter-logo.svg"><a>
                 </nav>
         </footer>
+        <script src="script.js"></script>
     </body>
 </html>
