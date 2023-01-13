@@ -278,15 +278,20 @@ li a {
     text-decoration: none;
 }
 
-.language {
-    padding-left: 1vw;
-    font-size: 0.8rem;
+#lan {
     display: flex;
+    justify-content: space-around;
+    width: auto;
+    margin-left: 1em;
+    font-size: 0.9rem;
+    padding: 0.2em;
+    border: 1px solid white;
 }
 
-.language p {
-    padding: 0 0.5vw 0 0.5vw;
+#lan li {
+    padding: 0.5em;
 }
+
 
 @media screen and (max-width: 1150px) {
     #description-container {

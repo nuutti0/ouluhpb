@@ -8,44 +8,74 @@
         <meta name="keywords" content="Oulu University Hospital, OYS, pancreatic, research, research group">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link type="text/css" href="style/index.css" rel="stylesheet">
+        <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+        <link rel="manifest" href="../site.webmanifest">
+        <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+        <script src="../script.js"></script>
     </head>
     <body>
-        <div class="navbar-container">
             <header class="navbar">
                 <div class="logos">
-                    <a href="#"><img src="../assets/ouluhpb.svg" class="uni-logo"></a>
-                    <a id="title" href="#">Oulun Yliopistollisen Sairaalan HPB -tutkimusryhmä</a>
+                    <a href="#"><img src="../assets/ouluhpb.svg" class="logo"></a>
+                    <p id="title" href="#">Oulun Yliopistollisen Sairaalan HPB-tutkimusryhmä</p>
                 </div>
                 <nav id="links">
-                    <a id="home" href="#">Koti</a>
-                    <a id="publications" href="julkaisut.html">Julkaisut</a>
-                    <a id="contact" href="yhteystiedot.html">Ota yhteyttä</a>
-                    <div class="language">
-                    <a id="fi" href="#" style="font-style: italic;">fi</a>
-                    <p>/</p>
-                    <a id="en" href="../index.html">en</a>
-                    </div>
+                    <ul class="navlinks">
+                    <li><a id="home" href="#">Koti</a></li>
+                    <li><a id="publications" href="julkaisut.html">Julkaisut</a></li>
+                </ul>
                 </nav>
+                <a class="cta" href="yhteystiedot.html"><button id="contact">Ota yhteyttä</button></a>
+                <ul class="navlinks" id="lan">
+                    <li><a id="fi" href="#" style="font-style: italic;">fi</a></li>
+                    <li><p>/</p></li>
+                    <li><a id="en" href="../index.html">en</a></li></ul>
             </header>
-        </div>
         <main>
-            <h1 class="main-title">Oulun Yliopistollisen Sairaalan <br>HPB -tutkimusryhmä</h1>
+            <h1 class="main-title">Oulun Yliopistollisen Sairaalan <br>HPB-tutkimusryhmä</h1>
             <div class="main-description">
                 <p id="textbox">Oulu HPB performs clinical and translational research combining surgery, clinical pathology, medical imaging and physics, 
                     aiming to identify the patients who benefit from invasive procedures.</p>
-                <a href="#"><img class="arrow" src="assets/chevron_right_FILL0_wght400_GRAD0_opsz48.svg"></a>
+                <a href="#"><img class="arrow" src="../assets/chevron_right_FILL0_wght400_GRAD0_opsz48.svg"></a>
             </div>
-        </main id="vanta">
+        </main>
         <div id="description-container">
             <img src="https://via.placeholder.com/700x400" id="description-image">
             <article id="description">
+                <div id="description-center-box">
                 <h2>Meistä</h2>
-                <p>Oulu HPB is a research group based in Oulu, Finland composed of x post-graduate researchers. We aim to use artificial intelligence
-                    to recognize and suggest optimal surgical decisions.
+                <p>
+                    Our group comprises X post-doctoral researchers and 5-10 doctoral students. 
+                    We collaborate with several study groups in Finland and internationally. 
+                    Our main partners at the University of Oulu have backgrounds in clinical apthology and medical imaging and physics. 
                 </p>
+                </div>
             </article>
         </div>
         <article id="publications-info">
+            <div id="publications-container">
+                <div id="publications-about">
+                <h2>Lorem ipsum sit dolor amet</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Magnam natus accusantium molestias totam tempore fugit asperiores, ipsa, repellendus quaerat provident quibusdam dolor?
+                    Adipisci esse, incidunt sequi numquam velit provident saepe.</p>
+                </div>
+                <!--
+                <div id="publications-links">
+                    <div id="link1">
+                        <div id="center-link1">
+                        <a>Link 1 - Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
+                        </div>
+                    </div>
+                    <div id="link2">
+                        <div id="center-link2">
+                        <a>Link 2 - Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
+                        </div>
+                    </div>
+                </div>-->
+           </div>
         </article>
         <footer>
             <section id="footer-info">
@@ -53,8 +83,6 @@
                     <h2>Ota yhteyttä</h2>
                     <ul>
                         <li><a href="mailto:heikki.huhta@oulu.fi">heikki.huhta@oulu.fi</a></li>
-                        <li><a href="mailto:minna.nortunen@pohde.fi">minna.nortunen@pohde.fi</a></li>
-                        <li><a href="mailto:marjo.h.koskela@pohde.fi">marjo.h.koskela@pohde.fi</a></li>
                     </ul>
                 </div>
                 <div id="xtra-info">

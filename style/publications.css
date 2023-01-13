@@ -22,22 +22,6 @@ header {
     font-family: 'Inter', sans-serif;
     height: 40px;
 }
-
-.main-title {
-    font-family: 'Inter', sans-serif;
-    font-size: 2rem;
-    display: flex;
-    font-weight: 600vw;
-    justify-content: left;
-    align-items: center;
-    height: 20vh;
-    width: auto;
-}
-
-.main-title h1 {
-    font-size: 3rem;
-}
-
 .main-description {
     width: 100%;
     height: auto;
@@ -77,26 +61,29 @@ main {
     padding-bottom: 4vh;
 }
 
-.language {
-    padding-left: 1vw;
-    font-size: 0.8rem;
+#lan {
     display: flex;
+    justify-content: space-around;
+    width: auto;
+    margin-left: 1em;
+    font-size: 0.9rem;
+    padding: 0.2em;
+    border: 1px solid white;
 }
 
-.language p {
-    padding: 0 0.5vw 0 0.5vw;
+#lan li {
+    padding: 0.5em;
 }
-
 
 .main-title {
     font-family: 'Inter', sans-serif;
-    width: 40vw;
+    width: auto;
     align-self: center;
-    padding-left: 10vh;
-    justify-self: center;
     font-size: 2.5rem;
     font-weight: 600vw;
+    padding: 6vh 0 6vh 3vw;
 }
+
 
 .vcards {
     width: 60vw;

@@ -6,61 +6,74 @@
     margin: 0;
 }
 
-.navbar-container {
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+
+header {
     display: flex;
-    width: 100vw;
-    justify-content: center;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10% 30px 10%;
     background-color: black;
+    color: white;
     font-family: 'Inter', sans-serif;
-    color: white;
-    position: fixed;
+    height: 40px;
 }
 
-.navbar {
-    display: flex;
-    width: 80vw;
-    height: 10vh;
-    justify-content: space-between;
-}
-
-.navbar .logos {
-    align-self: center;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#title {
-    font-size: 1rem;
-    align-self: center;
-    color: white;
-    text-decoration: none;
-    padding-left: 3vw;
-}
-
-
-#links {
-    display: flex;
-    width: 30vw;
-    align-items: center;
-    justify-content: space-around;
-}
-
-#links a {
-    color: white;
-    text-decoration: none;
-}
-
-.uni-logo {
-    width: 6em;
+.logo {
+    width: 5em;
+    cursor: pointer;
     filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7379%) hue-rotate(68deg) brightness(113%) contrast(98%);
+}
+
+.logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+}
+
+.navlinks {
+    list-style: none;
+    text-align: right;
+}
+
+.navlinks li {
+    display: inline-block;
+    padding: 0px 1em;
+}
+
+.navlinks li a {
+    transition: all 0.3s ease 0s;
+}
+
+.navlinks li a:hover {
+    color: lightgrey;
+}
+
+#contact {
+    padding: 1em 1.5em;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+#contact:hover {
+    background-color: rgba(197, 197, 197, 0.85);
 }
 
 main {
     display: flex;
-    height: 100vh;
+    height: auto;
     width: 100vw;
+    justify-content: center;
+    min-height: 85vh;
 }
+
 
 .main-title {
     font-family: 'Inter', sans-serif;
@@ -74,16 +87,18 @@ main {
 
 .vcards {
     width: 60vw;
-    padding-top: 20vh;
     font-family: 'Inter', sans-serif;
     display: grid;
     font-size: 1.25rem;
     grid-template-columns: 30vw 30vw;
+    align-items: center;
+    min-height: 100vh;
 }
 
-.arrow {
-    padding-top: 2vh;
+.vcards article {
+    width: 30vw;
 }
+
 
 footer {
     width: 100vw;
@@ -149,7 +164,7 @@ footer {
     font-style: italic;
 }
 
-ul {
+footer ul {
     list-style: none;
     text-align: center;
 }
@@ -164,42 +179,100 @@ a:hover {
     animation: shake 00.75s;
 }
 
-@media only screen and (max-width: 1150px) {
+#lan {
+    display: flex;
+    justify-content: space-around;
+    width: auto;
+    margin-left: 1em;
+    font-size: 0.9rem;
+    padding: 0.2em;
+    border: 1px solid white;
+}
+
+#lan li {
+    padding: 0.5em;
+}
+
+
+footer {
+    width: 100vw;
+    height: 80vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#footer-info {
+    width: 80vw;
+    height: 30vh;
+    display: flex;
+    font-family: 'Inter', sans-serif;
+    color: white;
+}
+
+#contact-us {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#xtra-info {
+    font-size: 1rem;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#copyright {
+    text-decoration: none;
+    color: white;
+}
+
+#socials {
+    display: flex;
+    height: 50vh;
+    width: 80vw;
+    align-items: center;
+    justify-content: center;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7379%) hue-rotate(68deg) brightness(113%) contrast(98%);
+}
+
+#socials a {
+    text-decoration: none;
+}
+
+#socials a img {
+    width: 2em;
+}
+
+
+@media screen and (max-width: 1150px) {
+    .vcards {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
     #description-container {
         animation: none;
         flex-direction: column;
         align-items: center;
-        height: 96vh;
+        min-height: 96vh;
 
     }
 
     #description {
-        height: 45vh;
-        width: 80vw;
+        width: 90%;
+        padding: 1em 0 1em 0;
     }
 
     #description-image {
-        width: 80vw;
-    }
-
-}
-
-@media only screen and (max-width: 820px) {
-    .navbar {
-        height: 20vh;
-        justify-content: center;
-        flex-wrap: wrap;
-        width: 100vw;
-    }
-
-    .logos {
-        width: 60vw;
-        justify-content: space-between;
-    }
-
-
-    #links {
-        width: 100vw;
+        width: 90%;
+        max-width: none;
     }
 
     main {
@@ -208,26 +281,84 @@ a:hover {
 
     .main-title {
         width: 90vw;
-        padding-bottom: 2vh;
+        padding: 10vh 0 6vh 0;
     }
 
     .main-description {
-        width: 90vw;
+        width: 80vw;
         text-align: left;
+    }
+
+    #publications-info {
+        height: auto;
+    }
+
+    #publications-container {
+        flex-direction: column;
+        max-height: none;
+        padding: 1em 0 1em 0;
+    }
+
+    #publications-about {
+        width: 90%;
+    }
+
+    #publications-links {
+        height: 30vh;
+        width: 80%;
+        align-self: center;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1.5fr 1fr 1.5fr;
+        grid-template-areas:
+            "buffer1 buffer1"
+            "link1 link2"
+            "buffer2 buffer2";
+    }
+    #link1, #link2 {
+        width: 100%;
+        display: flex;
+    }
+    #center-link1, #center-link2 {
+        align-items: center;
+        width: 80%;
+        justify-content: center;
+    }
+
+    .arrow-link {
+        display: none;
     }
 }
 
-@keyframes shake {
-    0% {transform: translateX(0px);}
-    50% {transform: translateX(5px);}
-    100% {transform: translateX(0px);}
-}
-.language {
-    padding-left: 1vw;
-    font-size: 0.8rem;
-    display: flex;
+@media screen and (max-width: 600px) {
+    #publications-links {
+        width: 80%;
+        align-self: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            "link1"
+            "link2";
+    }
+    #link1, #link2 {
+        width: 100%;
+        display: flex;
+    }
+    #center-link1, #center-link2 {
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+    }
+    #title {
+        display: none;
+    }
+
 }
 
-.language p {
-    padding: 0 0.5vw 0 0.5vw;
+
+#title, #copyright {
+    animation: none;
+}
+
+.vcards article {
+    padding-bottom: 3vh;
 }
