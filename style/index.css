@@ -1,5 +1,5 @@
 /* font import :) */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 * {
     padding: 0;
@@ -57,11 +57,16 @@ header {
 .navlinks {
     list-style: none;
     text-align: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.navlinks li {
-    padding: 0px 1em;
+.full {
+    padding: 0.5em;
 }
+
+
 
 .navlinks li a {
     transition: all 0.3s ease 0s;
@@ -257,6 +262,7 @@ footer {
 
 #contact-hamburger {
     display: none;
+    width: auto;
 }
 
 #xtra-info {
@@ -270,6 +276,42 @@ footer {
 #copyright {
     text-decoration: none;
     color: white;
+}
+
+.sponsors {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    row-gap: 5vh;
+    flex-direction: column;
+}
+
+.sponsors h1 {
+    font-family: 'Inter', sans-serif;
+    font-size: 2.5rem;
+    color: #989898;
+    font-weight: 500;
+}
+.sponsor-logos {
+    display: flex;
+    gap: 5px;
+    justify-content: space-evenly;
+    list-style: none;
+    width: 80%;
+    align-items: center;
+}
+
+#fi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25em;
+}
+
+.sponsor-png {
+    filter: brightness(0) saturate(100%) invert(66%) sepia(1%) saturate(2%) hue-rotate(3deg) brightness(92%) contrast(91%);
+    width: 100px;
 }
 
 #socials {
@@ -299,19 +341,6 @@ li a {
     text-decoration: none;
 }
 
-#lan {
-    display: flex;
-    justify-content: space-around;
-    width: auto;
-    margin-left: 1em;
-    font-size: 0.9rem;
-    padding: 0.2em;
-    border: 1px solid white;
-}
-
-#lan li {
-    padding: 0.5em;
-}
 
 
 @media screen and (max-width: 1150px) {
@@ -391,7 +420,7 @@ li a {
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 800px) {
     header {
         position: fixed;
         width: 100%;
@@ -447,25 +476,36 @@ li a {
         min-height: 50vh;
         border-radius: 0 0 100px 100px;
         border: 5px solid black;
+        padding: 0;
     }
 
     .navlinks.show li {
         margin-bottom:2.5em;
-
     }
+
+    .navlinks.show .full {
+        padding: 0;
+    }
+
     .navlinks.show li a {
         color: black;
         background-color: white;
         padding: 0.75em 1em 0.75em 1em;
         border-radius: 50px;
     }
-    .navlinks.show #home {
-        text-decoration: none;
-        font-style: italic;
+
+    #lan {
+        display: block;
+    }
+    #fi {
+        color: white;
+        background-color: black;
+        padding: 0;
+        font-size: 1.3rem;
     }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 600px) {
     #footer-info {
         flex-direction: column;
         align-items: center;
@@ -475,9 +515,36 @@ li a {
     #contact-us {
         margin-bottom: 60px;
     }
-}
+    
+    .sponsors h1 {
+        font-family: 'Inter', sans-serif;
+        font-size: 2rem;
+        color: #989898;
+    }
 
-   
+    .sponsor-logos {
+        display: grid;
+        row-gap: 5vh;
+        justify-content: space-evenly;
+        list-style: none;
+        width: 80%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .sponsor-logos li {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .sponsor-png {
+        filter: brightness(0) saturate(100%) invert(66%) sepia(1%) saturate(2%) hue-rotate(3deg) brightness(92%) contrast(91%);
+        width: 100px;
+    }
+}
 
 #title, #copyright {
     animation: none;
@@ -490,5 +557,5 @@ li a {
 }
 
 #home {
-    text-decoration: underline;
+    font-weight: 700;
 }

@@ -13,34 +13,49 @@
         <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
         <link rel="manifest" href="../site.webmanifest">
         <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
-        <script src="../script.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     </head>
     <body>
-            <header class="navbar">
+            <header class="navbar" id="navbar">
                 <div class="logos">
                     <a href="#"><img src="../assets/ouluhpb.svg" class="logo"></a>
                     <p id="title" href="#">Oulun Yliopistollisen Sairaalan HPB-tutkimusryhmä</p>
                 </div>
                 <nav id="links">
-                    <ul class="navlinks">
-                    <li><a id="home" href="#">Koti</a></li>
-                    <li><a id="publications" href="julkaisut.html">Julkaisut</a></li>
+                    <ul class="navlinks" id="navUL">
+                    <li class="navitem full"><a id="home" href="#">Koti</a></li>
+                    <li class="navitem"><a id="work" href="projektit.html">Projektit</a></li>
+                    <li class="navitem full"><a id="publications" href="julkaisut.html">Julkaisut</a></li>
+                    <li class="navitem"><a id="contact-hamburger" href="yhteystiedot.html">Ota yhteyttä</a></li>
+                    <a class="cta navitem" href="yhteystiedot.html"><button id="contact">Ota yhteyttä</button></a>
+                    <li class="navitem full" id="lan"><a id="en" href="../index.html"><span class="material-symbols-outlined">
+                        language
+                        </span> EN</a></li>
                 </ul>
                 </nav>
-                <a class="cta" href="yhteystiedot.html"><button id="contact">Ota yhteyttä</button></a>
-                <ul class="navlinks" id="lan">
-                    <li><a id="fi" href="#" style="font-style: italic;">fi</a></li>
-                    <li><p>/</p></li>
-                    <li><a id="en" href="../index.html">en</a></li></ul>
+                    <button class="hamburger" id="hamburger">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    </div>
             </header>
         <main>
-            <h1 class="main-title">Oulun Yliopistollisen Sairaalan <br>HPB-tutkimusryhmä</h1>
+            <h1 class="main-title">Oulun Yliopistollisen Sairaalan <br> HPB-tutkimusryhmä</h1>
             <div class="main-description">
                 <p id="textbox">Oulu HPB performs clinical and translational research combining surgery, clinical pathology, medical imaging and physics, 
                     aiming to identify the patients who benefit from invasive procedures.</p>
                 <a href="#"><img class="arrow" src="../assets/chevron_right_FILL0_wght400_GRAD0_opsz48.svg"></a>
             </div>
         </main>
+        <section class="sponsors">
+            <h1>Sponsorimme</h1>
+            <ul class="sponsor-logos">
+                <li><a href="https://laaketieteensaatio.fi"><img class="sponsor-png" src="../assets/laaketieteensaatio.png"></a></li>
+                <li><a href="https://marygeorg.fi"><img class="sponsor-png" src="../assets/marygeorg.png"></a></li>
+                <li><a href="#"><img class="sponsor-png" src="https://via.placeholder.com/100"></a></li>
+                <li><a href="#"><img class="sponsor-png" src="https://via.placeholder.com/100"></a></li>
+            </ul>
+        </section>
         <div id="description-container">
             <img src="https://via.placeholder.com/700x400" id="description-image">
             <article id="description">
@@ -83,15 +98,17 @@
                     <h2>Ota yhteyttä</h2>
                     <ul>
                         <li><a href="mailto:heikki.huhta@oulu.fi">heikki.huhta@oulu.fi</a></li>
+                        <li><a href="mailto:minna.nortunen@pohde.fi">minna.nortunen@pohde.fi</a></li>
                     </ul>
                 </div>
                 <div id="xtra-info">
-                    <a href="https://nortunen.com" id="copyright">&copy;</a>
+                    <a href="https://nortunen.com" id="copyright">&copy; 2023</a>
                 </div>
             </section>
                 <nav id="socials">
                     <a id="twitter" href="https://twitter.com"><img src="../assets/Twitter-logo.svg"><a>
                 </nav>
         </footer>
+        <script src="../script.js"></script>
     </body>
 </html>

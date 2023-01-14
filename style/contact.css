@@ -12,6 +12,14 @@ html {
     overflow-x: hidden;
 }
 
+#contact-hamburger {
+    display: none;
+    font-weight: 700;
+}
+.hamburger:focus {
+    outline: none;
+}
+
 .hamburger {
     cursor: pointer;
     border: 0;
@@ -20,13 +28,8 @@ html {
     font-size: 24px;
     display: none;
 }
-
 .hamburger:focus {
     outline: none;
-}
-
-#contact-hamburger {
-    display: none;
 }
 
 header {
@@ -43,6 +46,30 @@ header {
     height: 100px;
 }
 
+.navlinks {
+    list-style: none;
+    text-align: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.full {
+    padding: 0.5em;
+}
+
+.navlinks li a {
+    transition: all 0.3s ease 0s;
+}
+
+#fi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25em;
+}
+
+
 .logo {
     width: 5em;
     cursor: pointer;
@@ -56,27 +83,10 @@ header {
     margin-right: auto;
 }
 
-.navlinks {
-    list-style: none;
-    text-align: right;
-}
-
-.navlinks li {
-    display: inline-block;
-    padding: 0px 1em;
-}
-
-.navlinks li a {
-    transition: all 0.3s ease 0s;
-}
-
-.navlinks li a:hover {
-    color: lightgrey;
-}
-
 #contact {
     padding: 1em 1.5em;
-    background-color: rgb(255, 255, 255);
+    background-color: white;
+    font-style: italic;
     border: none;
     border-radius: 50px;
     cursor: pointer;
@@ -181,9 +191,6 @@ footer {
     animation: none;
 }
 
-#contact {
-    font-style: italic;
-}
 
 footer ul {
     list-style: none;
@@ -199,21 +206,6 @@ li a {
 a:hover {
     animation: shake 00.75s;
 }
-
-#lan {
-    display: flex;
-    justify-content: space-around;
-    width: auto;
-    margin-left: 1em;
-    font-size: 0.9rem;
-    padding: 0.2em;
-    border: 1px solid white;
-}
-
-#lan li {
-    padding: 0.5em;
-}
-
 
 footer {
     width: 100vw;
@@ -272,7 +264,7 @@ footer {
 }
 
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 800px) {
     .vcards {
         grid-template-columns: 1fr;
         justify-items: center;
@@ -378,6 +370,18 @@ footer {
         justify-content: center;
     }
 
+    header {
+        position: fixed;
+        width: 100%;
+        height: 15vh;
+        z-index: 99;
+        top: 0;
+    }
+
+    #contact-hamburger {
+        display: inline;
+    }
+
     .hamburger {
         display: block;
     }
@@ -385,11 +389,6 @@ footer {
     .navlinks {
         flex-direction: column;
     }
-
-    #contact-hamburger {
-        display: inline;
-    }
-    
     .navlinks, .cta {display: none;}
     .navlinks.show {
         display: flex;
@@ -406,23 +405,32 @@ footer {
         min-height: 50vh;
         border-radius: 0 0 100px 100px;
         border: 5px solid black;
+        padding: 0;
     }
 
     .navlinks.show li {
         margin-bottom:2.5em;
     }
+
+    .navlinks.show .full {
+        padding: 0;
+    }
+
     .navlinks.show li a {
         color: black;
         background-color: white;
         padding: 0.75em 1em 0.75em 1em;
         border-radius: 50px;
-        display:inline;
     }
-    .navlinks.show #contact-hamburger {
-        text-decoration: none;
-        font-style: italic;
+    #lan {
+        display: block;
     }
-
+    #fi {
+        color: white;
+        background-color: black;
+        padding: 0;
+        font-size: 1.3rem;
+    }
 }
 
 
