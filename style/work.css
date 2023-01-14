@@ -346,3 +346,15 @@ ul {
     text-decoration: underline;
 }
 
+
+@media screen and (max-width: 550px) {
+    #footer-info {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #contact-us {
+        margin-bottom: 60px;
+    }
+}
