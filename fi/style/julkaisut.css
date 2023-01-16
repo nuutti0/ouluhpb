@@ -417,3 +417,10 @@ ul {
     align-items: center;
     gap: 0.25em;
 }
+#news {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 0.25em;
+}

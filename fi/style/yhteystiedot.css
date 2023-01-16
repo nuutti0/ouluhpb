@@ -454,3 +454,11 @@ footer {
         margin-bottom: 60px;
     }
 }
+
+#news {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 0.25em;
+}
