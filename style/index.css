@@ -355,6 +355,8 @@ li a {
         width: 90%;
         padding: 1em 0 1em 0;
         height: auto;
+        max-height: none;
+        min-height: 65vh;
     }
 
     #description-image {
@@ -493,6 +495,8 @@ li a {
         padding: 0.75em 1em 0.75em 1em;
         border-radius: 50px;
     }
+
+
 
     #lan {
         display: block;
