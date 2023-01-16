@@ -85,7 +85,7 @@ header {
 }
 
 .textlinks {
-    border: red 2px solid;
+    display: none;
     height: 3em;
     width: 80vw;
     text-align: center;
