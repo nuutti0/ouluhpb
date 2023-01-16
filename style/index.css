@@ -84,6 +84,14 @@ header {
     cursor: pointer;
 }
 
+.textlinks {
+    border: red 2px solid;
+    height: 3em;
+    width: 80vw;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
 #contact:hover {
     background-color: rgba(197, 197, 197, 0.85);
 }
