@@ -393,38 +393,6 @@ ul {
     .hamburger {
         display: block;
     }
-
-    .navlinks {
-        flex-direction: column;
-    }
-    .navlinks, .cta {display: none;}
-    .navlinks.show {
-        display: flex;
-        position: fixed;
-        font-size: 1.2rem;
-        top: 15vh;
-        left: 0;
-        text-align: center;
-        justify-content: center;
-        background-color: black;
-        color: white;
-        width: 100%;
-        height: auto;
-        min-height: 50vh;
-        border-radius: 0 0 100px 100px;
-        border: 5px solid black;
-    }
-
-    .navlinks.show li {
-        margin-bottom:2.5em;
-
-    }
-    .navlinks.show li a {
-        color: black;
-        background-color: white;
-        padding: 0.75em 1em 0.75em 1em;
-        border-radius: 50px;
-    }
 }
 
 #title, #copyright {
