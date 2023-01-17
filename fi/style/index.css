@@ -81,8 +81,15 @@ header {
     background-color: rgb(255, 255, 255);
     border: none;
     border-radius: 50px;
-    white-space: pre;
     cursor: pointer;
+}
+
+.textlinks {
+    display: none;
+    height: 3em;
+    width: 80vw;
+    text-align: center;
+    font-size: 1.2rem;
 }
 
 #contact:hover {
@@ -122,7 +129,6 @@ main {
 
 
 .arrow {
-    padding-top: 2vh;
     filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7379%) hue-rotate(68deg) brightness(113%) contrast(98%);
 }
 
@@ -303,7 +309,17 @@ footer {
     align-items: center;
 }
 
-#en {
+.fin-arrow {
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+#fi {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -342,9 +358,25 @@ li a {
     text-decoration: none;
 }
 
+.sponsors h4 {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5rem;
+    color: #989898;
+    font-weight: 500;
+}
+.no-logo-sponsors, .no-logo-sponsors li, .no-logo-sponsors li a {
+    list-style-type: none;
+    font-family: 'Inter', sans-serif;
+    color: #989898;
+    text-align: center;
+}
+
+.no-logo-sponsors li a {
+    text-decoration: underline;
+}
 
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1200px) {
     #description-container {
         animation: none;
         flex-direction: column;
@@ -356,6 +388,8 @@ li a {
         width: 90%;
         padding: 1em 0 1em 0;
         height: auto;
+        max-height: none;
+        min-height: 65vh;
     }
 
     #description-image {
@@ -419,9 +453,6 @@ li a {
     #title {
         max-width: 70%;
     }
-}
-
-@media screen and (max-width: 800px) {
     header {
         position: fixed;
         width: 100%;
@@ -477,8 +508,8 @@ li a {
         min-height: 50vh;
         border-radius: 0 0 100px 100px;
         border: 5px solid black;
-        padding: 0;
         gap: 1.15em;
+        padding: 0;
     }
 
     .navlinks.show li {
@@ -499,16 +530,15 @@ li a {
     #lan {
         display: block;
     }
-    #en {
+    #fi {
         color: white;
         background-color: black;
         padding: 0;
         font-size: 1.3rem;
         margin: 1em 0 0.75em 0;
-    }
 }
-
-@media screen and (max-width: 600px) {
+}
+@media screen and (max-width: 900px) {
     #footer-info {
         flex-direction: column;
         align-items: center;

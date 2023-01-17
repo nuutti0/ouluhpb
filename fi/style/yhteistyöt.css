@@ -32,6 +32,42 @@ html {
     outline: none;
 }
 
+.members-wrapper {
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin: 5vh 0 5vh 5vh;
+}
+
+.names {
+    font-family: 'Inter', sans-serif;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+.names h5 {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.names ul li p {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+#non-deg {
+    padding-top: 1em;
+}
+
+.names h4 {
+    font-weight: 500;
+    padding-top: 1em;
+}
+
+
 header {
     display: flex;
     position: fixed;
@@ -378,7 +414,7 @@ ul {
     animation: none;
 }
 
-#publications {
+#collaborators {
     font-weight: 700;
 }
 
