@@ -129,7 +129,6 @@ main {
 
 
 .arrow {
-    padding-top: 2vh;
     filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7379%) hue-rotate(68deg) brightness(113%) contrast(98%);
 }
 
@@ -308,6 +307,16 @@ footer {
     list-style: none;
     width: 80%;
     align-items: center;
+}
+
+.fin-arrow {
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    text-decoration: none;
 }
 
 #fi {
