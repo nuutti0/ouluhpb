@@ -407,10 +407,11 @@ footer {
         border-radius: 0 0 100px 100px;
         border: 5px solid black;
         padding: 0;
+        gap: 1.15em;
     }
 
     .navlinks.show li {
-        margin-bottom:2.5em;
+        display: flex;
     }
 
     .navlinks.show .full {
@@ -431,6 +432,7 @@ footer {
         background-color: black;
         padding: 0;
         font-size: 1.3rem;
+        margin: 1em 0 0.75em 0;
     }
 }
 
