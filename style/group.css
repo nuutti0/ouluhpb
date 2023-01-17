@@ -86,10 +86,10 @@ header {
 #contact {
     padding: 1em 1.5em;
     background-color: white;
-    font-style: italic;
     border: none;
     border-radius: 50px;
     cursor: pointer;
+    font-style: italic;
 }
 
 #contact:hover {
@@ -100,34 +100,33 @@ main {
     display: flex;
     height: auto;
     width: 100vw;
-    justify-content: center;
-    min-height: 85vh;
-    padding-top: 150px;
+    height: auto;
+    padding-top: 20vh;
+    justify-content: space-between;
 }
 
 
 .main-title {
     font-family: 'Inter', sans-serif;
-    width: 40vw;
     align-self: center;
     padding-left: 10vh;
     justify-self: center;
     font-size: 2.5rem;
+    height: 50vh;
     font-weight: 600vw;
 }
 
 .vcards {
-    width: 60vw;
+    width: 85%;
     font-family: 'Inter', sans-serif;
-    display: grid;
+    display: flex;
     font-size: 1.25rem;
-    grid-template-columns: 30vw 30vw;
+    justify-content: space-evenly;
     align-items: center;
-    min-height: 100vh;
 }
 
 .vcards article {
-    width: 30vw;
+    width: 20vw;
 }
 
 
@@ -263,31 +262,65 @@ footer {
     width: 2em;
 }
 
+#news {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 0.25em;
+}
 
-@media screen and (max-width: 800px) {
-    .vcards {
-        grid-template-columns: 1fr;
-        justify-items: center;
-    }
 
-    #description-container {
-        animation: none;
-        flex-direction: column;
-        align-items: center;
-        min-height: 96vh;
+.htitle-vc {
+    font-weight: 500;
+    font-style: italic;
+    font-size: 1.25rem;
+}
 
-    }
+.members-wrapper {
+    height: auto;
+    width: 85%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin: 5vh 0 5vh 0;
+}
 
-    #description {
-        width: 90%;
-        padding: 1em 0 1em 0;
-    }
+.researchers, .students {
+    font-family: 'Inter', sans-serif;
+    width: 20vw;}
 
-    #description-image {
-        width: 90%;
-        max-width: none;
-    }
+h2 {
+    font-size: 2rem;
+}
 
+.researchers h5, .students h5 {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.researchers ul li p, .students ul li p {
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+
+.members {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#title, #copyright {
+    animation: none;
+}
+
+.vcards article {
+    padding-bottom: 3vh;
+}
+@media screen and (max-width: 1200px) {
     main {
         flex-direction: column;
     }
@@ -295,79 +328,9 @@ footer {
     .main-title {
         width: 90vw;
         padding: 10vh 0 6vh 0;
-    }
-
-    .main-description {
-        width: 80vw;
-        text-align: left;
-    }
-
-    #publications-info {
         height: auto;
-    }
-
-    #publications-container {
-        flex-direction: column;
-        max-height: none;
-        padding: 1em 0 1em 0;
-    }
-
-    #publications-about {
-        width: 90%;
-    }
-
-    #publications-links {
-        height: 30vh;
-        width: 80%;
-        align-self: center;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1.5fr 1fr 1.5fr;
-        grid-template-areas:
-            "buffer1 buffer1"
-            "link1 link2"
-            "buffer2 buffer2";
-    }
-    #link1, #link2 {
-        width: 100%;
-        display: flex;
-    }
-    #center-link1, #center-link2 {
-        align-items: center;
-        width: 80%;
-        justify-content: center;
-    }
-
-    .arrow-link {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    header {
-        position: fixed;
-        width: 100%;
-        height: 15vh;
-        z-index: 99;
-        top: 0;
-    }
-    
-    #publications-links {
-        width: 80%;
-        align-self: center;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-template-areas:
-            "link1"
-            "link2";
-    }
-    #link1, #link2 {
-        width: 100%;
-        display: flex;
-    }
-    #center-link1, #center-link2 {
-        align-items: center;
-        width: 100%;
-        justify-content: center;
+        text-align: center;
+        font-size: 4rem;
     }
 
     header {
@@ -393,10 +356,13 @@ footer {
     .navlinks.show {
         display: flex;
         position: fixed;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
         font-size: 1.2rem;
         top: 15vh;
         left: 0;
         text-align: center;
+        align-items: center;
         justify-content: center;
         background-color: black;
         color: white;
@@ -433,15 +399,38 @@ footer {
         font-size: 1.3rem;
         margin: 1em 0 0.75em 0;
     }
+    .members {
+        width: 100%;
+    }
+}
+@media screen and (max-width:850px) {
+.members {
+    width: 100%;
 }
 
-
-#title, #copyright {
-    animation: none;
+main {
+    width: 100vw;
 }
-
+.vcards {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
 .vcards article {
-    padding-bottom: 3vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+}
+.members-wrapper {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin: 5vh 0 5vh 0;
+}
 }
 
 @media screen and (max-width: 550px) {
@@ -454,11 +443,4 @@ footer {
     #contact-us {
         margin-bottom: 60px;
     }
-}
-#news {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    gap: 0.25em;
 }
