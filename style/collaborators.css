@@ -37,7 +37,7 @@ html {
     display: flex;
     justify-content: space-evenly;
     align-items: flex-start;
-    margin: 5vh 0 5vh 5vh;
+    margin: 5vh 0 0 0;
 }
 
 .names {
@@ -107,11 +107,11 @@ header {
     font-size: 1.25rem;
     color: black;
     background-color: white;
-    align-items: flex-start;
 }
 
 .main-description ul {
     padding-bottom: 3vh;
+    text-align: center;
 }
 
 main {
@@ -141,11 +141,10 @@ main {
 
 .main-title {
     font-family: 'Inter', sans-serif;
-    width: auto;
-    align-self: center;
-    font-size: 2.5rem;
-    font-weight: 600vw;
-    padding: 6vh 0 6vh 3vw;
+    width: 100vw;
+    height: auto;
+    text-align: center;
+    font-size: 4rem;
 }
 
 
@@ -281,12 +280,6 @@ ul {
     main {
         flex-direction: column;
     }
-
-    .main-description {
-        width: 80vw;
-        text-align: left;
-    }
-
     #publications-info {
         height: auto;
     }
