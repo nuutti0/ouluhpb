@@ -89,7 +89,7 @@ header {
     border: none;
     border-radius: 50px;
     cursor: pointer;
-    font-style: italic;
+    font-weight: 600;
 }
 
 #contact:hover {
