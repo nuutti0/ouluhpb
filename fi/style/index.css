@@ -600,3 +600,7 @@ li a {
     flex-direction: row;
     gap: 0.25em;
 }
+
+.sponsors h4 {
+    text-align: center;
+}

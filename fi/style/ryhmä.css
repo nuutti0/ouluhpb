@@ -444,3 +444,9 @@ main {
         margin-bottom: 60px;
     }
 }
+
+article img {
+    width: 125px;
+    height: 125px;
+    object-fit: cover;
+}

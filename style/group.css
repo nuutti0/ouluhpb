@@ -286,6 +286,7 @@ footer {
     margin: 5vh 0 5vh 0;
 }
 
+
 .researchers, .students {
     font-family: 'Inter', sans-serif;
     width: 20vw;}
@@ -443,4 +444,11 @@ main {
     #contact-us {
         margin-bottom: 60px;
     }
+}
+
+
+article img {
+    width: 125px;
+    height: 125px;
+    object-fit: cover;
 }
