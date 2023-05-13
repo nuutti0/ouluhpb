@@ -289,9 +289,9 @@ footer {
 
 .researchers, .students {
     font-family: 'Inter', sans-serif;
-    width: 20vw;}
+}
 
-h2 {
+.members-wrapper h2 {
     font-size: 2rem;
 }
 
@@ -321,6 +321,11 @@ h2 {
 .vcards article {
     padding-bottom: 3vh;
 }
+
+ul, li {
+    list-style-type: none;
+}
+
 @media screen and (max-width: 1200px) {
     main {
         flex-direction: column;
@@ -429,7 +434,8 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: flex-start;
+    text-align: center;
+    align-items: center;
     margin: 5vh 0 5vh 0;
 }
 }

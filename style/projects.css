@@ -66,7 +66,10 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-height: fit-content;
+    margin-bottom: 3em;
 }
+
 .main-title {
     width: 100%;
     font-size: 4rem;
@@ -79,10 +82,11 @@ main {
 .projects {
     width: 80vw;
     display: grid;
-    grid-template-columns: auto auto auto;
     grid-template-rows: auto auto auto;
-    gap: 2em;
-    justify-content: space-evenly;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: center;
+    gap: 3em;
+    justify-items: center;
 }
 
 .project {
