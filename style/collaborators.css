@@ -32,42 +32,6 @@ html {
     outline: none;
 }
 
-.members-wrapper {
-    height: auto;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    margin: 5vh 0 0 0;
-}
-
-.names {
-    font-family: 'Inter', sans-serif;
-}
-
-h2 {
-    font-size: 2rem;
-}
-
-.names h5 {
-    font-size: 1rem;
-    font-weight: 500;
-}
-
-.names ul li p {
-    font-size: 1.25rem;
-    font-weight: 600;
-}
-
-#non-deg {
-    padding-top: 1em;
-}
-
-.names h4 {
-    font-weight: 500;
-    padding-top: 1em;
-}
-
-
 header {
     display: flex;
     position: fixed;
@@ -97,74 +61,101 @@ header {
 .navlinks li a {
     transition: all 0.3s ease 0s;
 }
-
-.main-description {
-    width: 100%;
-    height: auto;
-    font-family: 'Inter', sans-serif;
+main {
+    padding-top: 150px;
     display: flex;
     flex-direction: column;
-    font-size: 1.25rem;
-    color: black;
-    background-color: white;
+    align-items: center;
+    min-height: fit-content;
+    margin-bottom: 3em;
 }
-
-.main-description ul {
-    padding-bottom: 3vh;
-    text-align: center;
-}
-
-main {
-    height: fit-content;
-    padding-top: 150px;
-}
-
-#textbox {
-    width: auto;
-    padding: 0 3vw 0 3vw;
-}
-
-#textbox a {
-    color: black;
-    text-decoration: underline;
-    font-weight: 600;
-}
-
-#textbox li {
-    padding-bottom: 2vh;
-}
-
-#textbox h1 {
-    padding-bottom: 4vh;
-}
-
 
 .main-title {
-    font-family: 'Inter', sans-serif;
     width: 100vw;
-    height: auto;
-    text-align: center;
     font-size: 4rem;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 1em;
+    font-family: 'Inter', sans-serif;
 }
 
-
-.vcards {
-    width: 60vw;
-    padding-top: 20vh;
+.collaborators {
     font-family: 'Inter', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#non-deg {
+    margin-top: 1em;
+}
+
+.projects {
+    width: 80vw;
     display: grid;
-    font-size: 1.25rem;
-    grid-template-columns: 30vw 30vw;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: center;
+    gap: 3em;
+    justify-items: center;
+}
+
+.project {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(230, 230, 230);
+    color: rgb(107, 107, 107);
+    border-radius: 10px;
+    box-shadow: 10px 10px 2px rgb(244, 244, 244);
+    position: relative;
+}
+
+.project a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.arrow {
+    filter: invert(44%) sepia(0%) saturate(22%) hue-rotate(168deg) brightness(94%) contrast(96%);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.project:hover {
+    transform: translate(10px, 10px);
+    box-shadow: 3px 3px 4px rgb(244, 244, 244);
+}
+
+.cover {
+    width: 300px;
+    height: 200px;
+}
+
+.project-info {
+    font-family: 'Inter', sans-serif;
+    min-height: 20vh;
+    padding: 1em;
+}
+
+.project h1 {
+    font-size: 1.5rem;
+}
+
+.project h2 {
+    font-size: 1.1rem;
 }
 
 footer {
     width: 100vw;
     height: 80vh;
-    background-color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: black;
 }
+
 
 
 #footer-info {
@@ -241,6 +232,11 @@ li a {
     flex-direction: row;
 }
 
+.navlinks {
+    list-style: none;
+    text-align: right;
+}
+
 ul {
     list-style: none;
 }
@@ -259,61 +255,6 @@ ul {
 }
 
 @media only screen and (max-width: 1200px) {
-    #description-container {
-        animation: none;
-        flex-direction: column;
-        align-items: center;
-        min-height: 96vh;
-
-    }
-
-    #description {
-        width: 90%;
-        padding: 1em 0 1em 0;
-    }
-
-    #description-image {
-        width: 90%;
-        max-width: none;
-    }
-
-    main {
-        flex-direction: column;
-    }
-    #publications-info {
-        height: auto;
-    }
-
-    #publications-container {
-        flex-direction: column;
-        max-height: none;
-        padding: 1em 0 1em 0;
-    }
-
-    #publications-about {
-        width: 90%;
-    }
-
-    #publications-links {
-        height: 30vh;
-        width: 80%;
-        align-self: center;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1.5fr 1fr 1.5fr;
-        grid-template-areas:
-            "buffer1 buffer1"
-            "link1 link2"
-            "buffer2 buffer2";
-    }
-    #link1, #link2 {
-        width: 100%;
-        display: flex;
-    }
-    #center-link1, #center-link2 {
-        align-items: center;
-        width: 80%;
-        justify-content: center;
-    }
 
     header {
         position: fixed;
@@ -322,6 +263,7 @@ ul {
         z-index: 99;
         top: 0;
     }
+
 
     #contact-hamburger {
         display: inline;
@@ -381,33 +323,29 @@ ul {
     }
 }
 
-@media screen and (max-width: 767px) {    
-    #publications-links {
-        width: 80%;
-        align-self: center;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-template-areas:
-            "link1"
-            "link2";
-    }
-    #link1, #link2 {
+@media screen and (max-width: 767px) {
+    header {
+        position: fixed;
         width: 100%;
-        display: flex;
-    }
-    #center-link1, #center-link2 {
-        align-items: center;
-        width: 100%;
-        justify-content: center;
+        height: 15vh;
+        z-index: 99;
+        top: 0;
     }
 
+    #contact-hamburger {
+        display: inline;
+    }   
+
+    .hamburger {
+        display: block;
+    }
 }
 
 #title, #copyright {
     animation: none;
 }
 
-#collaborators {
+#work {
     font-weight: 700;
 }
 
@@ -417,16 +355,10 @@ ul {
     }
 
     .main-title {
-        width: 90vw;
         padding-bottom: 2vh;
     }
 
-    .main-description {
-        width: 90vw;
-        text-align: left;
-    }
 }
-
 
 
 @media screen and (max-width: 550px) {
@@ -439,6 +371,11 @@ ul {
     #contact-us {
         margin-bottom: 60px;
     }
+
+    .main-title {
+        font-size: 12vw;
+    }
+
 }
  
 #fi {
@@ -447,6 +384,7 @@ ul {
     align-items: center;
     gap: 0.25em;
 }
+
 #news {
     display: flex;
     justify-content: center;
