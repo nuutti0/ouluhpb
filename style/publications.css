@@ -311,26 +311,27 @@ ul {
     }
     .navlinks, .cta {display: none;}
     .navlinks.show {
-        display: flex;
+        display: grid;
+        border: 2px solid red;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        grid-template-rows: auto;
         position: fixed;
         font-size: 1.2rem;
         top: 15vh;
         left: 0;
-        text-align: center;
         justify-content: center;
         background-color: black;
         color: white;
-        width: 100%;
+        width: 100vw;
         height: auto;
-        min-height: 50vh;
-        border-radius: 0 0 100px 100px;
         border: 5px solid black;
-        padding: 0;
-        gap: 1.15em;
+        gap: 1.2em;
+        padding: 0 2em 1em 2em;
     }
 
     .navlinks.show li {
-        display: flex;
+        align-items: center;
+        text-align: center;
     }
 
     .navlinks.show .full {
@@ -338,27 +339,16 @@ ul {
     }
 
     .navlinks.show li a {
-        color: black;
-        background-color: white;
-        padding: 0.75em 1em 0.75em 1em;
-        border-radius: 50px;
+        color: white;
     }
 
-    .publinks {
-        flex-direction: column;
-        gap: 5px;
-    }
-
-    #lan {
-        display: block;
-    }
     #fi {
         color: white;
+        text-align: center;
         background-color: black;
         padding: 0;
         font-size: 1.3rem;
-        margin: 1em 0 0.75em 0;
-    }
+}
 }
 
 @media screen and (max-width: 767px) {    
@@ -415,9 +405,21 @@ ul {
         align-items: center;
         justify-content: center;
     }
+    #footer-info {
+        height: auto;
+        text-align: center;
+    }
+    #footer-info h2 {
+        margin-bottom: 2vh;
+    }
 
     #contact-us {
         margin-bottom: 60px;
+        width: auto;
+        padding: 2em;
+    }
+    header {
+        height: 20vh;
     }
 }
  
