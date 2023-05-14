@@ -345,7 +345,7 @@ ul {
     animation: none;
 }
 
-#work {
+#collaborators {
     font-weight: 700;
 }
 
@@ -367,9 +367,6 @@ ul {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-    }
-    header {
-        height: 20vh;
     }
     #footer-info {
         height: auto;
