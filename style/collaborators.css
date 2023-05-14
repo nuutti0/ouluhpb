@@ -85,9 +85,6 @@ main {
     text-align: center;
 }
 
-#non-deg {
-    margin-top: 1em;
-}
 
 .projects {
     width: 80vw;
@@ -209,7 +206,7 @@ a:hover {
 }
 
 .collaborators li {
-    margin-bottom: 2vh;
+    margin-bottom: 1rem;
 }
 
 .collaborators li h4 {

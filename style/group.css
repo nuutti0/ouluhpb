@@ -109,9 +109,8 @@ main {
 .main-title {
     width: 100vw;
     font-size: 4rem;
-    font-weight: 600vw;
+    font-weight: 600;
     text-align: center;
-    padding-bottom: 1em;
     font-family: 'Inter', sans-serif;
 }
 
@@ -272,30 +271,34 @@ footer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-template-rows: auto auto;
-    gap: 3em;
 }
 
 .members section {
     font-family: 'Inter', sans-serif;
     text-align: center;
+    margin-top: 5vh;
 }
-
 
 .researchers, .students {
-    font-family: 'Inter', sans-serif;
-}
-
-.researchers h5, .students h5 {
-    font-size: 1rem;
-    font-weight: 500;
+    font-size: 1.5rem;
 }
 
 .researchers ul li p, .students ul li p {
     font-size: 1.25rem;
-    font-weight: 600;
     padding-bottom: 5px;
 }
 
+.researchers ul li {
+    margin-bottom: 1rem;
+}
+
+.students ul li {
+    margin-bottom: 0.5rem;
+}
+
+.researchers h2, .students h2 {
+    margin-bottom: 0.5rem;
+}
 
 #title, #copyright {
     animation: none;
@@ -390,6 +393,10 @@ ul, li {
     }
     header {
         height: 20vh;
+    }
+
+    .members {
+        width: auto;
     }
 }
 
