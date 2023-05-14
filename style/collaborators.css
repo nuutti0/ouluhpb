@@ -208,6 +208,14 @@ a:hover {
     animation: shake 00.75s;
 }
 
+.collaborators li {
+    margin-bottom: 2vh;
+}
+
+.collaborators li h4 {
+    margin-top: 4vh;
+}
+
 footer ul {
     list-style: none;
     text-align: center;

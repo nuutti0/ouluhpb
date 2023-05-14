@@ -74,7 +74,7 @@ main {
 .main-title {
     width: 100vw;
     font-size: 4rem;
-    font-weight: 600vw;
+    font-weight: 600;
     text-align: center;
     padding-bottom: 1em;
     font-family: 'Inter', sans-serif;

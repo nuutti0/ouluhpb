@@ -97,36 +97,22 @@ header {
 }
 
 main {
+    padding-top: 150px;
     display: flex;
-    height: auto;
-    width: 100vw;
-    height: auto;
-    padding-top: 20vh;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    min-height: fit-content;
+    margin-bottom: 3em;
 }
 
 
 .main-title {
-    font-family: 'Inter', sans-serif;
-    align-self: center;
-    padding-left: 10vh;
-    justify-self: center;
-    font-size: 2.5rem;
-    height: 50vh;
+    width: 100vw;
+    font-size: 4rem;
     font-weight: 600vw;
-}
-
-.vcards {
-    width: 85%;
+    text-align: center;
+    padding-bottom: 1em;
     font-family: 'Inter', sans-serif;
-    display: flex;
-    font-size: 1.25rem;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.vcards article {
-    width: 20vw;
 }
 
 
@@ -276,23 +262,27 @@ footer {
     font-style: italic;
     font-size: 1.25rem;
 }
-
-.members-wrapper {
-    height: auto;
-    width: 85%;
+.members {
     display: flex;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    margin: 5vh 0 5vh 0;
+    flex-direction: column;
+    width: 40%;
+}
+
+.members div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: auto auto;
+    gap: 3em;
+}
+
+.members section {
+    font-family: 'Inter', sans-serif;
+    text-align: center;
 }
 
 
 .researchers, .students {
     font-family: 'Inter', sans-serif;
-}
-
-.members-wrapper h2 {
-    font-size: 2rem;
 }
 
 .researchers h5, .students h5 {
@@ -306,39 +296,17 @@ footer {
     padding-bottom: 5px;
 }
 
-.members {
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 
 #title, #copyright {
     animation: none;
 }
 
-.vcards article {
-    padding-bottom: 3vh;
-}
 
 ul, li {
     list-style-type: none;
 }
 
 @media screen and (max-width: 1200px) {
-    main {
-        flex-direction: column;
-    }
-
-    .main-title {
-        width: 90vw;
-        padding: 10vh 0 6vh 0;
-        height: auto;
-        text-align: center;
-        font-size: 4rem;
-    }
-
     header {
         position: fixed;
         width: 100%;
@@ -390,46 +358,13 @@ ul, li {
     .navlinks.show li a {
         color: white;
     }
-
+    
     #fi {
         color: white;
         text-align: center;
         background-color: black;
         padding: 0;
         font-size: 1.3rem;
-}
-    .members {
-        width: 100%;
-    }
-}
-@media screen and (max-width:850px) {
-.members {
-    width: 100%;
-}
-
-main {
-    width: 100vw;
-}
-.vcards {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-}
-.vcards article {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 100vw;
-}
-.members-wrapper {
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    text-align: center;
-    align-items: center;
-    margin: 5vh 0 5vh 0;
 }
 }
 
@@ -459,7 +394,7 @@ main {
 }
 
 
-article img {
+section img {
     width: 125px;
     height: 125px;
     object-fit: cover;

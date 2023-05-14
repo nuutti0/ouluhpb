@@ -104,12 +104,12 @@ main {
 
 
 .main-title {
+    width: 100vw;
+    font-size: 4rem;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 1em;
     font-family: 'Inter', sans-serif;
-    width: auto;
-    align-self: center;
-    font-size: 2.5rem;
-    font-weight: 600vw;
-    padding: 6vh 0 6vh 3vw;
 }
 
 
@@ -385,16 +385,6 @@ ul {
     main {
         flex-direction: column;
     }
-
-    .main-title {
-        width: 90vw;
-        padding-bottom: 2vh;
-    }
-
-    .main-description {
-        width: 90vw;
-        text-align: left;
-    }
 }
 
 
@@ -418,8 +408,13 @@ ul {
         width: auto;
         padding: 2em;
     }
+
     header {
         height: 20vh;
+    }
+
+    .main-title {
+        font-size: 12vw;
     }
 }
  
