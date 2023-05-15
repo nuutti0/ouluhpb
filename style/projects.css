@@ -85,7 +85,7 @@ main {
     display: grid;
     grid-template-rows: auto auto auto;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    align-items: center;
+    align-items: normal;
     gap: 3em;
     justify-items: center;
 }
