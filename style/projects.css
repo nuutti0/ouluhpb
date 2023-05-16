@@ -102,6 +102,13 @@ main {
     position: relative;
 }
 
+
+
+.small-projects-title {
+    font-family: 'Inter', sans-serif;
+    width: 80%;
+}
+
 .project a {
     text-decoration: none;
     color: inherit;
@@ -146,8 +153,6 @@ footer {
     align-items: center;
     background-color: black;
 }
-
-
 
 #footer-info {
     width: 80vw;
@@ -208,6 +213,63 @@ li a {
     color:white;
     font-family: 'Inter', sans-serif;
     text-decoration: none;
+}
+
+.accordion {
+    width: 80vw;
+    margin: 1em auto;
+    color: black;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .accordion .container {
+    position: relative;
+    margin: .8em .8em;
+  }
+  
+  .accordion .label {
+    position: relative;
+    padding: 10px 0;
+    font-size: 1.2rem;
+    color: black;
+    cursor: pointer;
+  }
+  
+  .accordion .label::before {
+    content: '+';
+    color: black;
+    position: absolute;
+    top: 50%;
+    right: -5px;
+    font-size: 30px;
+    transform: translateY(-50%);
+  }
+  
+  .accordion .content {
+    position: relative;
+    height: 0;
+    text-align: left;
+    overflow: hidden;
+    /* transition: 0.5s;*/
+  }
+  
+  .accordion hr {
+    width: 100;
+    margin-left: 0;
+    border: 1px solid grey;
+  }
+  
+  .accordion .container.active .content {
+    height: auto;
+  }
+  
+  .accordion .container.active .label::before {
+    content: '-';
+  }
+
+.accordion h1 {
+    margin: 2em 0em 0em;
+
 }
 .logo {
     width: 5em;
@@ -371,6 +433,10 @@ ul {
         width: auto;
         padding: 2em;
     }
+    .accordion h1 {
+        text-align: center;
+        margin-top: 1em 0;
+      }
 }
  
 #fi {
