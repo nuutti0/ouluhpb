@@ -109,6 +109,7 @@ main {
     width: 100vw;
     font-size: 4rem;
     font-weight: 600;
+    padding-bottom: .3em;
     text-align: center;
     font-family: 'Inter', sans-serif;
 }
