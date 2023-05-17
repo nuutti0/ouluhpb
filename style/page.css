@@ -1,126 +1,102 @@
-main {
-    display: flex;
-    height: auto;
-    width: 100vw;
-    justify-content: center;
-    min-height: 85vh;
-    padding: 150px 0 15vh 0;
+/* font import :) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-.main-title {
-    font-family: 'Inter', sans-serif;
-    width: 40vw;
-    align-self: center;
-    font-size: 2.5rem;
-    font-weight: 600vw;
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
-.main-description {
-    width: 40vw;
-    align-self: center;
-    font-family: 'Inter', sans-serif;
-    text-align: end;
-    display: flex;
-    flex-direction: column;
-    font-size: 1.25rem;
+.hamburger {
+    cursor: pointer;
+    border: 0;
+    background-color: transparent;
     color: white;
-    background-color: black;
-    padding: 2em 2em 1em 2em;
-    align-items: flex-end;
+    font-size: 24px;
+    display: none;
 }
 
-#description-container {
+.hamburger:focus {
+    outline: none;
+}
+
+
+header {
+    display: flex;
+    position: fixed;
     width: 100vw;
-    height: auto;
-    display: flex;
-    position: relative;
-    justify-content: center;
-    padding: 15vh 0 15vh 0;
-}
-
-#description {
-    background-color: black;
-    width: 40vw;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    font-family: 'Inter', sans-serif;
+    z-index: 100;
+    justify-content: flex-end;
     align-items: center;
-    justify-content: center;
-}
-
-#description h2 {
-    font-size: 2rem;
+    padding: 30px 10% 30px 10%;
+    background-color: black;
     color: white;
-    width: 100%;
-}
-
-#description p {
-    font-size: 1.25rem;
-    color: white;
-}
-
-#description-image {
-    max-width: 50vw;
-}
-
-#description-center-box {
-    display: flex;
-    flex-direction: column;
-    width: 85%;
-}
-
-#publications-info {
-    height: auto;
-    display: flex;
     font-family: 'Inter', sans-serif;
-    justify-content: space-around;
-    width: 100vw;
-    padding: 15vh 0 30vh 0;
+    height: 100px;
 }
 
-#publications-about {
+.logo {
+    width: 5em;
+    cursor: pointer;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7379%) hue-rotate(68deg) brightness(113%) contrast(98%);
+}
+
+.logos {
     display: flex;
-    flex-direction: column;
-    width: 60%;
     justify-content: center;
-    align-self: center;
-    padding: 2em 0 1em 0;
+    align-items: center;
+    margin-right: auto;
+    flex-direction: row;
 }
 
-#publications-about h2 {
-    font-size: 2rem;
-}
-
-#publications-about p {
-    font-size: 1.25rem;
-    padding-top: 1vh;
-}
-
-
-#link1 {
-    grid-area: link1;
+.navlinks {
+    list-style: none;
+    text-align: right;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#link2 {
-    grid-area: link2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.full {
+    padding: 0.5em;
 }
 
-#publications-container {
-    background-color: black;
-    color: white;
-    height: auto;
-    min-height: 50vh;
-    width: 90vw;
-    display: flex;
-    font-family: 'Inter', sans-serif;
-    justify-content: space-around;
+
+.navlinks li a {
+    transition: all 0.3s ease 0s;
+}
+
+.navlinks li a:hover {
+    color: lightgrey;
+}
+
+#contact {
+    padding: 1em 1.5em;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.textlinks {
+    display: none;
+    height: 3em;
+    width: 80vw;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+#contact:hover {
+    background-color: rgba(197, 197, 197, 0.85);
+}
+
+.arrow {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7379%) hue-rotate(68deg) brightness(113%) contrast(98%);
 }
 
 footer {
@@ -249,68 +225,8 @@ li a {
     text-decoration: none;
 }
 
-.sponsors h4 {
-    font-family: 'Inter', sans-serif;
-    font-size: 1.5rem;
-    color: #989898;
-    font-weight: 500;
-}
-.no-logo-sponsors, .no-logo-sponsors li, .no-logo-sponsors li a {
-    list-style-type: none;
-    font-family: 'Inter', sans-serif;
-    color: #989898;
-    text-align: center;
-}
-
-.no-logo-sponsors li a {
-    text-decoration: underline;
-}
-
 
 @media screen and (max-width: 1200px) {
-    #description-container {
-        animation: none;
-        flex-direction: column;
-        align-items: center;
-        min-height: 96vh;
-    }
-
-    #description {
-        width: 90%;
-        padding: 2em;
-        height: auto;
-        max-height: none;
-    }
-
-    #description-image {
-        width: 90%;
-        max-width: none;
-    }
-
-    main {
-        flex-direction: column;
-    }
-
-    .main-title {
-        width: 90vw;
-        padding: 10vh 0 6vh 0;
-    }
-
-    .main-description {
-        width: 80vw;
-        text-align: left;
-    }
-
-    #link1, #link2 {
-        width: 100%;
-        display: flex;
-    }
-    #center-link1, #center-link2 {
-        align-items: center;
-        width: 80%;
-        justify-content: center;
-    }
-
     .arrow-link {
         display: none;
     }
@@ -329,26 +245,6 @@ li a {
     #contact-hamburger {
         display: inline;
     }    
-
-    #publications-links {
-        width: 80%;
-        align-self: center;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-template-areas:
-            "link1"
-            "link2";
-    }
-
-    #link1, #link2 {
-        width: 100%;
-        display: flex;
-    }
-    #center-link1, #center-link2 {
-        align-items: center;
-        width: 100%;
-        justify-content: center;
-    }
 
     .hamburger {
         display: block;
@@ -413,35 +309,6 @@ li a {
         width: auto;
         padding: 2em;
     }
-    
-    .sponsors h1 {
-        font-family: 'Inter', sans-serif;
-        font-size: 2rem;
-        color: #989898;
-    }
-
-    .sponsor-logos {
-        display: grid;
-        row-gap: 5vh;
-        justify-content: space-evenly;
-        list-style: none;
-        width: 80%;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-    }
-
-    .sponsor-logos li {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .sponsor-png {
-        filter: brightness(0) saturate(100%) invert(66%) sepia(1%) saturate(2%) hue-rotate(3deg) brightness(92%) contrast(91%);
-        width: 100px;
-    }
 }
 
 #title, #copyright {
@@ -454,20 +321,12 @@ li a {
     100% {transform: translateX(0px);}
 }
 
-#home {
-    font-weight: 700;
-}
-
 #news {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
     gap: 0.25em;
-}
-
-.sponsors h4 {
-    text-align: center;
 }
 
 @media screen and (max-width: 550px) {

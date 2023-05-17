@@ -6,3 +6,5 @@ hamburger.addEventListener('click', () => {
     navUL.classList.toggle('show');
     header.classList.toggle('show');
 });
+
+document.getElementById("year").innerHTML = new Date().getFullYear();
