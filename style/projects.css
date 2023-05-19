@@ -19,7 +19,6 @@ main {
 .projects {
     width: 80vw;
     display: grid;
-    grid-template-rows: auto auto auto;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     align-items: normal;
     gap: 3em;
@@ -52,9 +51,10 @@ main {
     position: absolute;
     right: 0;
     bottom: 0;
+    filter: none;
 }
 
-.project:hover {
+.project:hover, .second-box:hover {
     transform: translate(10px, 10px);
     box-shadow: 3px 3px 4px rgb(244, 244, 244);
 }
@@ -76,10 +76,6 @@ main {
 
 .project h2 {
     font-size: 1.1rem;
-}
-
-a:hover {
-    animation: shake 00.75s;
 }
 
 footer ul {
@@ -162,10 +158,6 @@ footer ul {
         flex-direction: column;
     }
 
-    .main-title {
-        padding-bottom: 2vh;
-    }
-
 }
 
 
@@ -173,7 +165,21 @@ footer ul {
     .accordion h1 {
         text-align: center;
         margin-top: 1em 0;
-      }
+    }
+
+    .projects {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }  
+
+    .project {
+        width: 250px;
+    }
+
+    .cover {
+        width: 250px;
+        object-fit: cover;
+    }
+    
 }
 
 
