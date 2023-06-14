@@ -47,10 +47,6 @@ main {
     grid-template-columns: 30vw 30vw;
 }
 
-a:hover {
-    animation: shake 00.75s;
-}
-
 ul {
     list-style: none;
 }
@@ -60,6 +56,7 @@ ul {
     flex-direction: column;
     gap: .8em;
     margin: .5em 0 1em 0;
+    text-align: center;
 }
 
 .publinks a {
@@ -69,6 +66,12 @@ ul {
     align-items: center;
     justify-content: center;
     padding: .5em;
+    transition: all 0.3s ease 0s;
+}
+
+.publinks a:hover {
+    animation: link-button 1s forwards ease-in-out;
+    background-color: rgb(209, 209, 209);
 }
 
 #contact {
@@ -90,7 +93,6 @@ ul {
 #publications {
     font-weight: 700;
 }
-
 
 
 
