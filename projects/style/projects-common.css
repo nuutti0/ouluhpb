@@ -325,6 +325,11 @@ ul {
         top: 0;
     }
 
+    .header-container.show {
+        width: 100vw;
+        border-radius: 0;
+    }
+
     #collab-studies-flexwrapper {
         flex-direction: column;
         text-align: center;
@@ -344,26 +349,25 @@ ul {
     }
     .navlinks, .cta {display: none;}
     .navlinks.show {
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        grid-template-rows: auto auto;
         position: fixed;
         font-size: 1.2rem;
-        top: 15vh;
+        top: 100px;
         left: 0;
-        text-align: center;
         justify-content: center;
         background-color: black;
         color: white;
-        width: 100%;
+        width: 100vw;
         height: auto;
-        min-height: 50vh;
-        border-radius: 0 0 100px 100px;
-        border: 5px solid black;
-        padding: 0;
-        gap: 1.15em;
+        gap: 1.2em;
+        padding: 0 2em 1em 2em;
     }
 
     .navlinks.show li {
-        display: flex;
+        align-items: center;
+        text-align: center;
     }
 
     .navlinks.show .full {
@@ -371,10 +375,7 @@ ul {
     }
 
     .navlinks.show li a {
-        color: black;
-        background-color: white;
-        padding: 0.75em 1em 0.75em 1em;
-        border-radius: 50px;
+        color: white;
     }
 
     #lan {
