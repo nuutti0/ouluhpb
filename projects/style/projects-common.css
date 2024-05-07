@@ -35,15 +35,26 @@ html {
 header {
     display: flex;
     position: fixed;
-    width: 100vw;
     z-index: 100;
-    justify-content: flex-end;
+    width: 100vw;
+    justify-content: center;
     align-items: center;
-    padding: 30px 10% 30px 10%;
-    background-color: black;
+    padding: 0;
+    background-color: transparent;
     color: white;
     font-family: 'Inter', sans-serif;
     height: 100px;
+}
+
+.header-container {
+    display: flex;
+    z-index: 101;
+    padding: 30px 7% 15px 7%;
+    width: 95vw;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: black;
+    border-radius: 0 0 25px 25px;
 }
 
 .navlinks {
@@ -187,13 +198,20 @@ main {
 footer {
     width: 100vw;
     height: 80vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: black;
+    padding: 30px 7% 15px 7%;
+    width: 95vw;
+    border-radius: 25px 25px 0 0;
 }
-
-
 
 #footer-info {
     width: 80vw;
@@ -209,12 +227,18 @@ footer {
     width: 50%;
     align-items: center;
     justify-content: center;
+    text-align: center;
+}
+
+#contact-hamburger {
+    display: none;
 }
 
 #xtra-info {
     font-size: 1rem;
     width: 50%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -226,7 +250,7 @@ footer {
 
 #socials {
     display: flex;
-    height: 50vh;
+    height: 40vh;
     width: 80vw;
     align-items: center;
     justify-content: center;

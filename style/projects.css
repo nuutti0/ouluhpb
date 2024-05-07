@@ -36,6 +36,7 @@ main {
     box-shadow: 10px 10px 2px rgb(244, 244, 244);
     position: relative;
     transition: all 150ms ease;
+    border-radius: 25px;
 }
 
 .small-projects-title {
@@ -52,7 +53,7 @@ main {
     position: absolute;
     right: 0;
     bottom: 0;
-    filter: none;
+    filter: none !important;
 }
 
 .project:hover, .second-box:hover {
@@ -63,6 +64,7 @@ main {
 .cover {
     width: 300px;
     height: 200px;
+    border-radius: 25px 25px 0 0;
 }
 
 .project-info {

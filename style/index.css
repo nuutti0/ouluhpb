@@ -11,8 +11,15 @@ main {
     font-family: 'Inter', sans-serif;
     width: 40vw;
     align-self: center;
-    font-size: 2.5rem;
-    font-weight: 600vw;
+    font-size: 4rem;
+    background-image: url(
+        "/assets/frontpage.png");
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    font-weight: 800;
+    -webkit-font-smoothing: antialiased;
 }
 
 .main-description {
@@ -27,6 +34,7 @@ main {
     background-color: black;
     padding: 2em 2em 1em 2em;
     align-items: flex-end;
+    border-radius: 25px;
 }
 
 #description-container {
@@ -47,6 +55,7 @@ main {
     font-family: 'Inter', sans-serif;
     align-items: center;
     justify-content: center;
+    border-radius: 0 25px 25px 0;
 }
 
 #description h2 {
@@ -62,6 +71,7 @@ main {
 
 #description-image {
     max-width: 50vw;
+    border-radius: 25px 0 0 25px;
 }
 
 #description-center-box {
@@ -113,6 +123,7 @@ main {
 }
 
 #publications-container {
+    border-radius: 25px;
     background-color: black;
     color: white;
     height: auto;
@@ -121,23 +132,6 @@ main {
     display: flex;
     font-family: 'Inter', sans-serif;
     justify-content: space-around;
-}
-
-footer {
-    width: 100vw;
-    height: 80vh;
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#footer-info {
-    width: 80vw;
-    height: 30vh;
-    display: flex;
-    font-family: 'Inter', sans-serif;
-    color: white;
 }
 
 #contact-us {
@@ -167,19 +161,28 @@ footer {
     color: white;
 }
 
+.sponsor-container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
 .sponsors {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
+    width: 95vw;
     row-gap: 5vh;
     flex-direction: column;
+    background-color: black;
+    border-radius: 25px;
+    padding: 50px 0 50px 0;
 }
 
 .sponsors h1 {
     font-family: 'Inter', sans-serif;
     font-size: 2.5rem;
-    color: #989898;
+    color: white;
     font-weight: 500;
 }
 .sponsor-logos {
@@ -210,7 +213,7 @@ footer {
 }
 
 .sponsor-png {
-    filter: brightness(0) saturate(100%) invert(66%) sepia(1%) saturate(2%) hue-rotate(3deg) brightness(92%) contrast(91%);
+    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(1%) hue-rotate(348deg) brightness(104%) contrast(101%);
     width: 100px;
 }
 
@@ -220,7 +223,6 @@ footer {
     width: 80vw;
     align-items: center;
     justify-content: center;
-    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7379%) hue-rotate(68deg) brightness(113%) contrast(98%);
 }
 
 #finhpb {
@@ -252,13 +254,13 @@ li a {
 .sponsors h4 {
     font-family: 'Inter', sans-serif;
     font-size: 1.5rem;
-    color: #989898;
+    color: white;
     font-weight: 500;
 }
 .no-logo-sponsors, .no-logo-sponsors li, .no-logo-sponsors li a {
     list-style-type: none;
     font-family: 'Inter', sans-serif;
-    color: #989898;
+    color: white;
     text-align: center;
 }
 
@@ -294,6 +296,8 @@ li a {
     .main-title {
         width: 90vw;
         padding: 10vh 0 6vh 0;
+        text-align: center;
+        font-size: 3.25rem;
     }
 
     .main-description {
@@ -417,7 +421,6 @@ li a {
     .sponsors h1 {
         font-family: 'Inter', sans-serif;
         font-size: 2rem;
-        color: #989898;
     }
 
     .sponsor-logos {
