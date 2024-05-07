@@ -171,7 +171,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 95vw;
+    width: 80vw;
     row-gap: 5vh;
     flex-direction: column;
     background-color: black;
@@ -282,11 +282,13 @@ li a {
         padding: 2em;
         height: auto;
         max-height: none;
+        border-radius: 0 0 25px 25px;
     }
 
     #description-image {
         width: 90%;
         max-width: none;
+        border-radius: 25px 25px 0 0;
     }
 
     main {
@@ -322,13 +324,6 @@ li a {
     #title {
         max-width: 70%;
     }
-    header {
-        position: fixed;
-        width: 100%;
-        height: 15vh;
-        z-index: 99;
-        top: 0;
-    }
 
     #contact-hamburger {
         display: inline;
@@ -360,23 +355,6 @@ li a {
 
     .navlinks {
         flex-direction: column;
-    }
-    .navlinks, .cta {display: none;}
-    .navlinks.show {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-        grid-template-rows: auto auto;
-        position: fixed;
-        font-size: 1.2rem;
-        top: 15vh;
-        left: 0;
-        justify-content: center;
-        background-color: black;
-        color: white;
-        width: 100vw;
-        height: auto;
-        gap: 1.2em;
-        padding: 0 2em 1em 2em;
     }
 
     .navlinks.show li {

@@ -165,29 +165,6 @@ footer {
     color: white;
 }
 
-.sponsors {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    row-gap: 5vh;
-    flex-direction: column;
-}
-
-.sponsors h1 {
-    font-family: 'Inter', sans-serif;
-    font-size: 2.5rem;
-    color: #989898;
-    font-weight: 500;
-}
-.sponsor-logos {
-    display: flex;
-    gap: 5px;
-    justify-content: space-evenly;
-    list-style: none;
-    width: 80%;
-    align-items: center;
-}
 
 .fin-arrow {
     text-align: right;
@@ -207,10 +184,6 @@ footer {
     gap: 0.25em;
 }
 
-.sponsor-png {
-    filter: brightness(0) saturate(100%) invert(66%) sepia(1%) saturate(2%) hue-rotate(3deg) brightness(92%) contrast(91%);
-    width: 100px;
-}
 
 #socials {
     display: flex;
@@ -253,15 +226,13 @@ li a {
         display: none;
     }
 
+    .header-container.show {
+        width: 100vw;
+        border-radius: 0;
+    }
+
     #title {
         max-width: 70%;
-    }
-    header {
-        position: fixed;
-        width: 100%;
-        height: 15vh;
-        z-index: 99;
-        top: 0;
     }
 
     #contact-hamburger {
@@ -282,7 +253,7 @@ li a {
         grid-template-rows: auto auto;
         position: fixed;
         font-size: 1.2rem;
-        top: 15vh;
+        top: 100px;
         left: 0;
         justify-content: center;
         background-color: black;
