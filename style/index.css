@@ -5,6 +5,10 @@ main {
     justify-content: center;
     min-height: 85vh;
     padding: 150px 0 15vh 0;
+    background-image: url("/assets/finland.svg");
+    background-repeat: no-repeat;
+    background-position: left 150px center;
+    background-size: 20%;
 }
 
 .main-title {
@@ -293,6 +297,8 @@ li a {
 
     main {
         flex-direction: column;
+        background-position: center top 100px;
+        background-size: 200px;
     }
 
     .main-title {
@@ -420,7 +426,6 @@ li a {
     }
     
     .sponsor-png {
-        filter: brightness(0) saturate(100%) invert(66%) sepia(1%) saturate(2%) hue-rotate(3deg) brightness(92%) contrast(91%);
         width: 100px;
     }
 }
