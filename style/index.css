@@ -5,10 +5,7 @@ main {
     justify-content: center;
     min-height: 85vh;
     padding: 150px 0 15vh 0;
-    background-image: url("/assets/finland.svg");
-    background-repeat: no-repeat;
-    background-position: left 150px center;
-    background-size: 20%;
+
 }
 
 .main-title {
@@ -16,11 +13,6 @@ main {
     width: 40vw;
     align-self: center;
     font-size: 4rem;
-    background-image: url(
-        "/assets/frontpage.png");
-    background-repeat: repeat;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     font-weight: bold;
     font-weight: 800;
     -webkit-font-smoothing: antialiased;
