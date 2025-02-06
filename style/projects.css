@@ -1,195 +1,62 @@
 main {
-    padding-top: 150px;
+    width: 100vw;
+    height: auto;
     display: flex;
+    width: 83svw;
     flex-direction: column;
     align-items: center;
-    min-height: fit-content;
-    margin-bottom: 3em;
+    justify-content: center;
 }
 
-.main-title {
-    width: 100vw;
-    font-size: 3.2rem;
-    font-weight: 600;
+.projects-container {
+    width: 83vw;
+}
+
+.projects-container h1 {
+    font-size: clamp(50px, 10vw, 100px);
+    letter-spacing: -.05em;
+    padding-bottom: 50px;
     text-align: center;
-    padding-bottom: 1em;
-    font-family: 'Inter', sans-serif;
 }
 
 .projects {
-    width: 80vw;
+    width: 100%;
+    text-align: justify;
+    align-items: start;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    align-items: normal;
     gap: 3em;
     justify-items: center;
 }
 
-.project {
+.projects article {
     width: 300px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container {
+    padding: 10px;
+}
+
+.projects article img {
+    width: 100%;
+    aspect-ratio: 2 / 1.5;
+}
+
+.other-studies {
+    padding-top: 50px;
+    text-align: justify;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    background-color: rgb(230, 230, 230);
-    color: rgb(107, 107, 107);
-    border-radius: 10px;
-    box-shadow: 10px 10px 2px rgb(244, 244, 244);
-    position: relative;
-    transition: all 150ms ease;
-    border-radius: 25px;
+    gap: 10px;
 }
 
-.small-projects-title {
-    font-family: 'Inter', sans-serif;
-    width: 80%;
+.other-studies h2 {
+    font-size: 1.4rem;
 }
-
-.project a {
-    text-decoration: none;
-    color: inherit;
-}
-
-.arrow {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    filter: none !important;
-}
-
-.project:hover, .second-box:hover {
-    transform: translate(10px, 10px);
-    box-shadow: 3px 3px 4px rgb(244, 244, 244);
-}
-
-.cover {
-    width: 300px;
-    height: 200px;
-    border-radius: 25px 25px 0 0;
-}
-
-.project-info {
-    font-family: 'Inter', sans-serif;
-    min-height: 20vh;
-    padding: 1em;
-}
-
-.project h1 {
-    font-size: 1.5rem;
-}
-
-.project h2 {
-    font-size: 1.1rem;
-}
-
-footer ul {
-    list-style: none;
-    text-align: center;
-}
-
-.accordion {
-    width: 80vw;
-    margin: 1em auto;
-    color: black;
-    font-family: 'Inter', sans-serif;
-  }
-  
-  .accordion .container {
-    position: relative;
-    margin: .8em .8em;
-  }
-  
-  .accordion .label {
-    position: relative;
-    padding: 10px 0;
-    font-size: 1.2rem;
-    color: black;
-    cursor: pointer;
-  }
-  
-  .accordion .label::before {
-    content: '+';
-    color: black;
-    position: absolute;
-    top: 50%;
-    right: -5px;
-    font-size: 30px;
-    transform: translateY(-50%);
-  }
-  
-  .accordion .content {
-    position: relative;
-    height: 0;
-    text-align: left;
-    overflow: hidden;
-    /* transition: 0.5s;*/
-  }
-  
-  .accordion hr {
-    width: 100;
-    margin-left: 0;
-    border: 1px solid grey;
-  }
-  
-  .accordion .container.active .content {
-    height: auto;
-  }
-  
-  .accordion .container.active .label::before {
-    content: '-';
-  }
-
-.accordion h1 {
-    margin: 2em 0em 0em;
-
-}
-
-@media only screen and (max-width: 1200px) {
-
-    #collab-studies-flexwrapper {
-        flex-direction: column;
-        text-align: center;
-        gap: 1em;
-    }
-}
-
-#work {
-    font-weight: 700;
-}
-
-@media only screen and (max-width: 820px) {
-    main {
-        flex-direction: column;
-    }
-
-}
-
-
-@media screen and (max-width: 550px) {
-    .accordion h1 {
-        text-align: center;
-        margin-top: 1em 0;
-    }
-
-    .projects {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    }  
-
-    .project {
-        width: 250px;
-    }
-
-    .cover {
-        width: 250px;
-        object-fit: cover;
-    }
-    
-}
-
-
-#news {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    gap: 0.25em;
+.other-studies h3 {
+    font-size: 1.3rem;
 }

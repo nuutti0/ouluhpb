@@ -1,111 +1,31 @@
-.main-description {
-    width: 100%;
-    height: auto;
-    font-family: 'Inter', sans-serif;
-    display: flex;
-    flex-direction: column;
-    font-size: 1.25rem;
-    color: black;
-    background-color: white;
-    align-items: flex-start;
-}
-
-.main-description ul {
-    padding-bottom: 3vh;
-}
-
 main {
-    height: fit-content;
-    padding-top: 150px;
-}
-
-#textbox {
-    width: auto;
-    padding: 0 3vw 0 3vw;
-}
-
-#textbox li {
-    padding-bottom: 2vh;
-}
-
-.main-title {
     width: 100vw;
-    font-size: 3.2rem;
-    font-weight: 600;
-    text-align: center;
-    padding-bottom: 1em;
-    font-family: 'Inter', sans-serif;
-}
-
-
-.vcards {
-    width: 60vw;
-    padding-top: 20vh;
-    font-family: 'Inter', sans-serif;
-    display: grid;
-    font-size: 1.25rem;
-    grid-template-columns: 30vw 30vw;
-}
-
-ul {
-    list-style: none;
-}
-.publinks {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 200px));
+    height: auto;
+    display: flex;
+    width: 83svw;
     flex-direction: column;
-    gap: .8em;
-    margin: .5em 0 1em 0;
-}
-
-.publinks a {
-    display: flex;
-    color: rgb(255, 255, 255);
-    background-color: rgb(0, 0, 0);
     align-items: center;
     justify-content: center;
-    padding: .5em;
-    transition: all 0.3s ease 0s;
-    border-radius: 25px;
 }
 
-.publinks a:hover {
-    animation: link-button 1s forwards ease-in-out;
-    background-color: rgb(209, 209, 209);
+.pubs h1 {
+    font-size: clamp(50px, 10vw, 100px);
+    letter-spacing: -.05em;
+    padding-bottom: 50px;
+    text-align: center;
 }
 
-#contact {
-    padding: 1em 1.5em;
-    background-color: rgb(255, 255, 255);
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
+.pubs-ind {
+    width: 100%;
+    text-align: justify;
+    align-items: start;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3em;
+    justify-items: center;
 }
 
-#contact:hover {
-    background-color: rgba(197, 197, 197, 0.85);
-}
-
-#title, #copyright {
-    animation: none;
-}
-
-#publications {
-    font-weight: 700;
-}
-
-
-
-@media screen and (max-width: 550px) {
-    .main-title {
-        font-size: 12vw;
-    }
-}
- 
-#news {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    gap: 0.25em;
+.pubs.icon-span {
+    font-size: 1.2rem;
+    padding-block: 2px;
 }

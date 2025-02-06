@@ -8,17 +8,17 @@ main {
     justify-content: center;
 }
 
-.collabs h1 {
+.about h1 {
     font-size: clamp(50px, 10vw, 100px);
     letter-spacing: -.05em;
     padding-bottom: 50px;
     text-align: center;
 }
 
-.collabs-ind-container {
+.about-ind-container {
     width: 83vw;
     text-align: justify;
-    align-items: start;
+    align-items: end;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1em;
@@ -26,6 +26,15 @@ main {
     text-align: center;
 }
 
-.collabs-ind-container article {
+.about-ind-container article {
     width: 200px;
+}
+
+
+.pfp {
+    width: 100px;
+}
+
+.email {
+    text-decoration: underline;
 }
