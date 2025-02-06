@@ -23,6 +23,7 @@ main {
 
 .about {
     min-height: calc(150svh - 80px);
+    width: 100%;
     text-align: justify;
     display: flex;
     flex-direction: column;
@@ -37,7 +38,8 @@ main {
 }
 
 .about p, .finhpb p {
-    width: clamp(270px, 60svw, 100%);
+    min-width: 200px;
+    max-width: 650px;
 }
 
 .about img {
@@ -51,6 +53,7 @@ main {
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
+    width: 100%;
 }
 
 .sponsors {
