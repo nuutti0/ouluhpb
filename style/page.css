@@ -14,6 +14,10 @@
     font-weight: 500;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 header {
     width: 100%;
     padding-right: 20px;
