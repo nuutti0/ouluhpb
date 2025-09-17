@@ -114,11 +114,11 @@ body {
 }
 
 p {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
 
 li {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
 }
 
 footer {
@@ -146,6 +146,10 @@ footer li {
 
 .navigation li::before, .socials li::before {
     content: "-> "
+}
+
+h3 {
+    font-size: 1.4rem;
 }
 
 .socialsplusme {
