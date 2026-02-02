@@ -192,3 +192,7 @@ h3 {
     }
 
 }
+
+.collapsible-nav:nth-child(2) {
+    display: none;
+}

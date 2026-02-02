@@ -24,7 +24,7 @@ main {
 .about {
     min-height: calc(150svh - 80px);
     width: 100%;
-    text-align: justify;
+    text-align: right;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -48,7 +48,7 @@ main {
 
 .finhpb {
     min-height: calc(60svh - 80px);
-    text-align: justify;
+    text-align: left;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -59,7 +59,7 @@ main {
 .sponsors {
     min-height: calc(100svh - 80px);
     width: 100%;
-    text-align: justify;
+    text-align: left;
     display: flex;
     flex-direction: column;
     align-items: flex-start;

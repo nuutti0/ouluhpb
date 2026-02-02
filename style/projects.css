@@ -44,7 +44,6 @@ main {
 .projects article img {
     width: 100%;
     aspect-ratio: 2 / 1.5;
-    border-radius: 25% 5% 25% 5%;
 }
 
 .other-studies {
